@@ -1,0 +1,50 @@
+.block-calendar {
+  cursor: pointer;
+
+  h2, p {
+    transition: 0.3s;
+  }
+
+  &:hover {
+    box-shadow: none;
+
+    p {
+      color: $c-black;
+    }
+
+    h2 {
+      color: $c-orange-dark;
+    }
+
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    color: $c-gray-light;
+  }
+
+}
+
+.calendar__img {
+  margin-bottom: 1.5rem;
+
+  img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+}
+
+.calendar__date {
+  color: $c-red;
+  font-weight: bold;
+  font-family: $font-family-narrow;
+  font-size: $font-size-basemax;
+
+}
+
+
+

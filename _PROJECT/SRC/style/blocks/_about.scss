@@ -1,0 +1,48 @@
+.block-idx_about {
+  display: flex;
+  justify-content: space-between;
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+
+  .about__txt {
+    width: 50%;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      margin-top: -4rem;
+      position: relative;
+      z-index: 9;
+      font-size: $font-size-base;
+    }
+
+  }
+
+  .about__img {
+    width: 50%;
+    padding-left: 3rem;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 15px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 672px;
+      height: auto;
+
+      @include media-breakpoint-down(md) {
+        max-width: 500px;
+      }
+
+    }
+
+  }
+
+
+
+}

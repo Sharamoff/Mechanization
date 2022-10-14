@@ -1,0 +1,18 @@
+.block-photolist {
+  background: $c-white;
+  border-radius: $border-radius;
+  padding: 0.5rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  p {
+    text-align: center;
+    line-height: $line-height-min;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+}

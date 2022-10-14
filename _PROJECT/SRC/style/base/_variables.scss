@@ -1,0 +1,68 @@
+// media
+
+$m-min:									290px;
+$m-max:									1434px;
+
+$blockpic-max:					290px;
+
+$top-adv-height:        180px;
+
+
+// colors
+
+$c-white:               rgb(255, 255, 255);
+$c-black:               rgb(0, 0, 0);
+
+$c-gray-lightermore:		#eeeeee;
+$c-gray-lighter:				#dddddd;
+$c-gray-light:					#666666;
+$c-gray:								#444444;
+$c-orange:              #ffa400;
+$c-orange-dark:         #ff7000;
+$c-red:                 #cc0000;
+
+$color-bk-body:         $c-gray-lightermore;
+$color-text:            $c-gray;
+$color-link:            $c-black;
+$color-link-hover:      $c-orange-dark;
+$color-hdr:      			  $c-black;
+$color-note:						$c-gray-light;
+$color-placeholder:     $c-gray-light;
+$color-border:					$c-gray-lighter;
+$color-border-hover:		$c-gray;
+$color-plate:           $c-white;
+
+
+
+
+// fonts
+
+$fontawesome:						'Font Awesome 5 Pro';
+$font-family-narrow:    'PT Sans Narrow', 'Arial Narrow', Arial, Helvetica, sans-serif;
+$font-family-base:      'PT Sans', Arial, Helvetica, sans-serif;
+
+$f-size-base-xxl:       10px;
+$f-size-base-xl:        10px;
+$f-size-base-lg:        10px;
+$f-size-base-md:        10px;
+$f-size-base-sm:        10px;
+$f-size-base-xs:        10px;
+
+$font-size-base:        1.5rem;
+$font-size-basemin:     1.3rem;
+$font-size-basemax:     1.7rem;
+$font-size-hdr:         2.1rem;
+$line-height-def:       1.4;
+$line-height-min:       1.1;
+
+$font-base:             1.5rem/1.8rem $font-family-base;
+$font-narrow:           1.7rem/1.1 $font-family-narrow;
+$font-hdr:              2rem/1.1 $font-family-narrow;
+
+
+$border-radius:         5px;
+$btn-border-radius:     9px;
+
+
+
+

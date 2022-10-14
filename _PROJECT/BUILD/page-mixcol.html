@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<title>Механизация.ру</title>
+
+	<link href="css/vendor.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/addit.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+
+
+<header>
+  <div class="wrap-header">
+
+
+    <div class="header__hamb" title="Главное меню"><span></span></div>
+
+
+    <a href="https://www.mechanization.ru/" class="header__logo"><img src="img/logo.svg" width="" alt="Механизация.ру"></a>
+
+
+    <div class="header__search">
+      <input  type="search" id="fld-search" class="search_fld" name="fld-search" placeholder="Поиск по сайту" autocomplete="off">
+      <button type="submit" id="b-search" class="search_btn" title="Поиск по сайту"></button>
+    </div>
+
+
+    <div class="header__icons">
+      <a href="" class="i-item" title="Избранное"><i class="far fa-heart"></i><span class="bl">96</span></a>
+      <a href="" class="i-item" title="Вы смотрели"><i class="far fa-eye"></i></a>
+      <a href="" class="i-item" title="Сообщения"><i class="far fa-envelope"></i><span class="bl">3</span></a>
+
+      <div class="block-userlogin">
+
+        <button class="b-user" data-bs-toggle="dropdown" data-bs-reference="parent" aria-expanded="false" title="Личный кабинет"><i class="fas fa-user-circle"></i></button>
+
+        <div class="userlogin-plate dropdown-menu">
+          <div class="userlogin__hdr">
+            <h2>Авторизация</h2>
+          </div>
+          <form class="userlogin__fm">
+            <div class="form-group">
+              <label for="fm_userlogin__email" class="form-label">Ваш e-mail:</label>
+              <input type="email" class="form-control" id="fm_userlogin__email" placeholder="email@example.com">
+            </div>
+            <div class="form-group">
+              <label for="fm_userlogin__password" class="form-label">Ваш пароль:</label>
+              <input type="password" class="form-control" id="fm_userlogin__password" placeholder="пароль">
+            </div>
+            <button type="submit" class="b-btn">Войти</button>
+          </form>
+          <div class="userlogin__links">
+            <strong><a href="#">Регистрация</a></strong>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#">Забыли пароль?</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <button class="header__btn"><i class="fal fa-plus" title="Разместить объявление бесплатно"></i>Разместить<span>&nbsp;бесплатно</span></button>
+
+
+  </div>
+</header>
+<div class="header-fix"></div>
+
+
+
+
+
+<nav class="mainmenu">
+<div class="wrap-mainmenu">
+
+
+
+  <div class="mainmenu__region" id="id__region">
+    <span>Ваш регион:</span>
+    <div class="region_name"><i class="fas fa-map-marker-check"></i>г. Ленинск-Кузнецкий, Россия</div>
+  </div>
+
+
+
+  <div class="mainmenu__regionplate" id="id__regionplate">
+
+    <div class="row">
+      <div class="col-md-8">
+        <div class="nav nav-pills regionplate_navs" role="tablist">
+          <a class="nav-item nav-link active" id="nav-tab-ru" data-bs-toggle="tab" href="#nav-ru" role="tab" aria-controls="nav-ru" aria-selected="true">Россия</a>
+          <a class="nav-item nav-link" id="nav-tab-uk" data-bs-toggle="tab" href="#nav-uk" role="tab" aria-controls="nav-uk" aria-selected="false">Украина</a>
+          <a class="nav-item nav-link" id="nav-tab-by" data-bs-toggle="tab" href="#nav-by" role="tab" aria-controls="nav-by" aria-selected="false">Белоруссия</a>
+          <a class="nav-item nav-link" id="nav-tab- kz" data-bs-toggle="tab" href="#nav-kz" role="tab" aria-controls="nav-kz" aria-selected="false">Казахстан</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <form name="fm_regionplate_search">
+          <input name="fld_regionplate-search" type="search" class="form-control fld_regionplate_search" id="region_block_autocomplete_city" placeholder="Поиск по городам" autocomplete="off">
+        </form>
+      </div>
+    </div>
+
+    <div class="tab-content regionplate_tabs">
+      <div class="tab-pane fade show active" id="nav-ru" role="tabpanel" aria-labelledby="nav-tab-ru">
+        <div class="row">
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Москва, Россия" class="link_select_region">Москва</a></li>
+            <li><a href="#" rel="г. Санкт-Петербург, Россия" class="link_select_region">Санкт-Петербург</a></li>
+            <li><a href="#" rel="г. Севастополь, Россия" class="link_select_region">Севастополь</a></li>
+            <li><a href="#" rel="г. Абакан, Россия" class="link_select_region">Абакан</a></li>
+            <li><a href="#" rel="г. Ангарск, Россия" class="link_select_region">Ангарск</a></li>
+            <li><a href="#" rel="г. Астрахань, Россия" class="link_select_region">Астрахань</a></li>
+            <li><a href="#" rel="г. Барнаул, Россия" class="link_select_region">Барнаул</a></li>
+            <li><a href="#" rel="г. Белгород, Россия" class="link_select_region">Белгород</a></li>
+            <li><a href="#" rel="г. Белово, Россия"  class="link_select_region">Белово</a></li>
+            <li><a href="#" rel="г. Бийск, Россия" class="link_select_region">Бийск</a></li>
+            <li><a href="#" rel="г. Бор, Россия" class="link_select_region">Бор</a></li>
+            <li><a href="#" rel="г. Брянск, Россия" class="link_select_region">Брянск</a></li>
+            <li><a href="#" rel="г. Владивосток, Россия" class="link_select_region">Владивосток</a></li>
+            <li><a href="#" rel="г. Владимир, Россия" class="link_select_region">Владимир</a></li>
+            <li><a href="#" rel="г. Волгоград, Россия" class="link_select_region">Волгоград</a></li>
+            <li><a href="#" rel="г. Воронеж, Россия" class="link_select_region">Воронеж</a></li>
+            <li><a href="#" rel="г. Выборг, Россия" class="link_select_region">Выборг</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Выкса, Россия" class="link_select_region">Выкса</a></li>
+            <li><a href="#" rel="г. Геленджик, Россия" class="link_select_region">Геленджик</a></li>
+            <li><a href="#" rel="г. Горячий Ключ, Россия" class="link_select_region">Горячий Ключ</a></li>
+            <li><a href="#" rel="г. Грозный, Россия" class="link_select_region">Грозный</a></li>
+            <li><a href="#" rel="г. Добрянка, Россия" class="link_select_region">Добрянка</a></li>
+            <li><a href="#" rel="г. Домодедово, Россия" class="link_select_region">Домодедово</a></li>
+            <li><a href="#" rel="г. Екатеринбург, Россия" class="link_select_region">Екатеринбург</a></li>
+            <li><a href="#" rel="г. Железногорск, Россия" class="link_select_region">Железногорск</a></li>
+            <li><a href="#" rel="г. Златоуст, Россия" class="link_select_region">Златоуст</a></li>
+            <li><a href="#" rel="г. Иваново, Россия" class="link_select_region">Иваново</a></li>
+            <li><a href="#" rel="г. Ижевск, Россия" class="link_select_region">Ижевск</a></li>
+            <li><a href="#" rel="г. Иркутск, Россия" class="link_select_region">Иркутск</a></li>
+            <li><a href="#" rel="г. Казань, Россия" class="link_select_region">Казань</a></li>
+            <li><a href="#" rel="г. Калининград, Россия" class="link_select_region">Калининград</a></li>
+            <li><a href="#" rel="г. Калуга, Россия" class="link_select_region">Калуга</a></li>
+            <li><a href="#" rel="г. Кемерово, Россия" class="link_select_region">Кемерово</a></li>
+            <li><a href="#" rel="г. Керчь, Россия" class="link_select_region">Керчь</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Киров, Россия" class="link_select_region">Киров</a></li>
+            <li><a href="#" rel="г. Киселевск, Россия"  class="link_select_region">Киселевск</a></li>
+            <li><a href="#" rel="г. Комсомольск-на-Амуре, Россия" class="link_select_region">Комсомольск-на-Амуре</a></li>
+            <li><a href="#" rel="г. Копейск, Россия" class="link_select_region">Копейск</a></li>
+            <li><a href="#" rel="г. Краснодар, Россия" class="link_select_region">Краснодар</a></li>
+            <li><a href="#" rel="г. Красноярск, Россия" class="link_select_region">Красноярск</a></li>
+            <li><a href="#" rel="г. Курган, Россия" class="link_select_region">Курган</a></li>
+            <li><a href="#" rel="г. Курск, Россия" class="link_select_region">Курск</a></li>
+            <li><a href="#" rel="г. Ленинск-Кузнецкий, Россия" class="link_select_region">Ленинск-Кузнецкий</a></li>
+            <li><a href="#" rel="г. Лесной, Россия" class="link_select_region">Лесной</a></li>
+            <li><a href="#" rel="г. Липецк, Россия" class="link_select_region">Липецк</a></li>
+            <li><a href="#" rel="г. Магнитогорск, Россия" class="link_select_region">Магнитогорск</a></li>
+            <li><a href="#" rel="г. Майкоп, Россия" class="link_select_region">Майкоп</a></li>
+            <li><a href="#" rel="г. Махачкала, Россия" class="link_select_region">Махачкала</a></li>
+            <li><a href="#" rel="г. Миасс, Россия" class="link_select_region">Миасс</a></li>
+            <li><a href="#" rel="г. Мыски, Россия" class="link_select_region">Мыски</a></li>
+            <li><a href="#" rel="г. Назрань, Россия" class="link_select_region">Назрань</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Нижний Новгород, Россия" class="link_select_region">Нижний Новгород</a></li>
+            <li><a href="#" rel="г. Нижний Тагил, Россия" class="link_select_region">Нижний Тагил</a></li>
+            <li><a href="#" rel="г. Новокузнецк, Россия" class="link_select_region">Новокузнецк</a></li>
+            <li><a href="#" rel="г. Новороссийск, Россия" class="link_select_region">Новороссийск</a></li>
+            <li><a href="#" rel="г. Новосибирск, Россия" class="link_select_region">Новосибирск</a></li>
+            <li><a href="#" rel="г. Омск, Россия" class="link_select_region">Омск</a></li>
+            <li><a href="#" rel="г. Оренбург, Россия" class="link_select_region">Оренбург</a></li>
+            <li><a href="#" rel="г. Орёл, Россия" class="link_select_region">Орёл</a></li>
+            <li><a href="#" rel="г. Орск, Россия" class="link_select_region">Орск</a></li>
+            <li><a href="#" rel="г. Пенза, Россия" class="link_select_region">Пенза</a></li>
+            <li><a href="#" rel="г. Первоуральск, Россия" class="link_select_region">Первоуральск</a></li>
+            <li><a href="#" rel="г. Пермь, Россия" class="link_select_region">Пермь</a></li>
+            <li><a href="#" rel="г. Прокопьевск, Россия" class="link_select_region">Прокопьевск</a></li>
+            <li><a href="#" rel="Пупышево, Россия" class="link_select_region">Пупышево</a></li>
+            <li><a href="#" rel="г. Пятигорск, Россия" class="link_select_region">Пятигорск</a></li>
+            <li><a href="#" rel="г. Ростов-на-Дону, Россия" class="link_select_region">Ростов-на-Дону</a></li>
+            <li><a href="#" rel="г. Рубцовск, Россия" class="link_select_region">Рубцовск</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Рыбинск, Россия" class="link_select_region">Рыбинск</a></li>
+            <li><a href="#" rel="г. Рязань, Россия" class="link_select_region">Рязань</a></li>
+            <li><a href="#" rel="г. Самара, Россия" class="link_select_region">Самара</a></li>
+            <li><a href="#" rel="г. Саратов, Россия" class="link_select_region">Саратов</a></li>
+            <li><a href="#" rel="г. Саяногорск, Россия" class="link_select_region">Саяногорск</a></li>
+            <li><a href="#" rel="г. Симферополь, Россия" class="link_select_region">Симферополь</a></li>
+            <li><a href="#" rel="г. Смоленск, Россия" class="link_select_region">Смоленск</a></li>
+            <li><a href="#" rel="г. Сочи, Россия" class="link_select_region">Сочи</a></li>
+            <li><a href="#" rel="г. Ставрополь, Россия" class="link_select_region">Ставрополь</a></li>
+            <li><a href="#" rel="г. Старый Оскол, Россия" class="link_select_region">Старый Оскол</a></li>
+            <li><a href="#" rel="г. Сызрань, Россия"  class="link_select_region">Сызрань</a></li>
+            <li><a href="#" rel="г. Тверь, Россия" class="link_select_region">Тверь</a></li>
+            <li><a href="#" rel="г. Томск, Россия" class="link_select_region">Томск</a></li>
+            <li><a href="#" rel="г. Тула, Россия" class="link_select_region">Тула</a></li>
+            <li><a href="#" rel="г. Тюмень, Россия" class="link_select_region">Тюмень</a></li>
+            <li><a href="#" rel="г. Улан-Удэ, Россия" class="link_select_region">Улан-Удэ</a></li>
+            <li><a href="#" rel="г. Ульяновск, Россия" class="link_select_region">Ульяновск</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Уссурийск, Россия" class="link_select_region">Уссурийск</a></li>
+            <li><a href="#" rel="г. Уфа, Россия" class="link_select_region">Уфа</a></li>
+            <li><a href="#" rel="г. Ухта, Россия" class="link_select_region">Ухта</a></li>
+            <li><a href="#" rel="г. Феодосия, Россия" class="link_select_region">Феодосия</a></li>
+            <li><a href="#" rel="г. Хабаровск, Россия" class="link_select_region">Хабаровск</a></li>
+            <li><a href="#" rel="г. Хасавюрт, Россия" class="link_select_region">Хасавюрт</a></li>
+            <li><a href="#" rel="г. Чебоксары, Россия" class="link_select_region">Чебоксары</a></li>
+            <li><a href="#" rel="г. Челябинск, Россия" class="link_select_region">Челябинск</a></li>
+            <li><a href="#" rel="г. Чита, Россия" class="link_select_region">Чита</a></li>
+            <li><a href="#" rel="г. Чусовой, Россия" class="link_select_region">Чусовой</a></li>
+            <li><a href="#" rel="г. Шахты, Россия" class="link_select_region">Шахты</a></li>
+            <li><a href="#" rel="г. Элиста, Россия" class="link_select_region">Элиста</a></li>
+            <li><a href="#" rel="г. Южно-Сахалинск, Россия" class="link_select_region">Южно-Сахалинск</a></li>
+            <li><a href="#" rel="г. Якутск, Россия" class="link_select_region">Якутск</a></li>
+            <li><a href="#" rel="г. Ярославль, Россия" class="link_select_region">Ярославль</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-uk" role="tabpanel" aria-labelledby="nav-tab-uk">
+        <div class="row">
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Киев, Украина" class="link_select_region">Киев</a></li>
+            <li><a href="#" rel="г. Винница, Украина" class="link_select_region">Винница</a></li>
+            <li><a href="#" rel="г. Днепропетровск, Украина" class="link_select_region">Днепропетровск</a></li>
+            <li><a href="#" rel="г. Донецк, Украина" class="link_select_region">Донецк</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Житомир, Украина" class="link_select_region">Житомир</a></li>
+            <li><a href="#" rel="г. Ивано-Франковск, Украина" class="link_select_region">Ивано-Франковск</a></li>
+            <li><a href="#" rel="г. Кировоград, Украина" class="link_select_region">Кировоград</a></li>
+            <li><a href="#" rel="г. Луганск, Украина" class="link_select_region">Луганск</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Луцк, Украина" class="link_select_region">Луцк</a></li>
+            <li><a href="#" rel="г. Львов, Украина" class="link_select_region">Львов</a></li>
+            <li><a href="#" rel="г. Николаев, Украина" class="link_select_region">Николаев</a></li>
+            <li><a href="#" rel="с. Новое Запорожье, Украина" class="link_select_region">Новое Запорожье</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Одесса, Украина" class="link_select_region">Одесса</a></li>
+            <li><a href="#" rel="г. Полтава, Украина" class="link_select_region">Полтава</a></li>
+            <li><a href="#" rel="г. Ровно, Украина" class="link_select_region">Ровно</a></li>
+            <li><a href="#" rel="г. Сумы, Украина" class="link_select_region">Сумы</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Тернополь, Украина" class="link_select_region">Тернополь</a></li>
+            <li><a href="#" rel="г. Ужгород, Украина" class="link_select_region">Ужгород</a></li>
+            <li><a href="#" rel="г. Харьков, Украина" class="link_select_region">Харьков</a></li>
+            <li><a href="#" rel="г. Херсон, Украина" class="link_select_region">Херсон</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Хмельницкий, Украина" class="link_select_region">Хмельницкий</a></li>
+            <li><a href="#" rel="г. Черкассы, Украина" class="link_select_region">Черкассы</a></li>
+            <li><a href="#" rel="г. Чернигов, Украина" class="link_select_region">Чернигов</a></li>
+            <li><a href="#" rel="г. Черновцы, Украина" class="link_select_region">Черновцы</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-by" role="tabpanel" aria-labelledby="nav-tab-by">
+        <div class="row">
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Минск, Белоруссия" class="link_select_region">Минск</a></li>
+            <li><a href="#" rel="г. Барановичи, Белоруссия" class="link_select_region">Барановичи</a></li>
+            <li><a href="#" rel="г. Белоозерск, Белоруссия" class="link_select_region">Белоозерск</a></li>
+            <li><a href="#" rel="г. Береза, Белоруссия" class="link_select_region">Береза</a></li>
+            <li><a href="#" rel="г. Березино, Белоруссия" class="link_select_region">Березино</a></li>
+            <li><a href="#" rel="г. Березовка, Белоруссия" class="link_select_region">Березовка</a></li>
+            <li><a href="#" rel="г. Бобруйск, Белоруссия" class="link_select_region">Бобруйск</a></li>
+            <li><a href="#" rel="г. Борисов, Белоруссия" class="link_select_region">Борисов</a></li>
+            <li><a href="#" rel="г. Браслав, Белоруссия" class="link_select_region">Браслав</a></li>
+            <li><a href="#" rel="г. Брест, Белоруссия" class="link_select_region">Брест</a></li>
+            <li><a href="#" rel="г. Буда-Кошелево, Белоруссия" class="link_select_region">Буда-Кошелево</a></li>
+            <li><a href="#" rel="г. Быхов, Белоруссия" class="link_select_region">Быхов</a></li>
+            <li><a href="#" rel="г. Василевичи, Белоруссия" class="link_select_region">Василевичи</a></li>
+            <li><a href="#" rel="г. Верхнедвинск, Белоруссия" class="link_select_region">Верхнедвинск</a></li>
+            <li><a href="#" rel="г. Ветка, Белоруссия" class="link_select_region">Ветка</a></li>
+            <li><a href="#" rel="г. Вилейка, Белоруссия" class="link_select_region">Вилейка</a></li>
+            <li><a href="#" rel="г. Витебск, Белоруссия" class="link_select_region">Витебск</a></li>
+            <li><a href="#" rel="г. Волковыск, Белоруссия" class="link_select_region">Волковыск</a></li>
+            <li><a href="#" rel="г. Воложин, Белоруссия" class="link_select_region">Воложин</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Высокое, Белоруссия" class="link_select_region">Высокое</a></li>
+            <li><a href="#" rel="г. Ганцевичи, Белоруссия" class="link_select_region">Ганцевичи</a></li>
+            <li><a href="#" rel="г. Глубокое, Белоруссия" class="link_select_region">Глубокое</a></li>
+            <li><a href="#" rel="г. Гомель, Белоруссия" class="link_select_region">Гомель</a></li>
+            <li><a href="#" rel="г. Горки, Белоруссия" class="link_select_region">Горки</a></li>
+            <li><a href="#" rel="г. Городок, Белоруссия" class="link_select_region">Городок</a></li>
+            <li><a href="#" rel="г. Гродно, Белоруссия" class="link_select_region">Гродно</a></li>
+            <li><a href="#" rel="г. Давид-Городок, Белоруссия" class="link_select_region">Давид-Городок</a></li>
+            <li><a href="#" rel="г. Дзержинск, Белоруссия" class="link_select_region">Дзержинск</a></li>
+            <li><a href="#" rel="г. Дисна, Белоруссия" class="link_select_region">Дисна</a></li>
+            <li><a href="#" rel="г. Добруш, Белоруссия" class="link_select_region">Добруш</a></li>
+            <li><a href="#" rel="г. Докшицы, Белоруссия" class="link_select_region">Докшицы</a></li>
+            <li><a href="#" rel="г. Дрогичин, Белоруссия" class="link_select_region">Дрогичин</a></li>
+            <li><a href="#" rel="г. Дубровно, Белоруссия" class="link_select_region">Дубровно</a></li>
+            <li><a href="#" rel="г. Дятлово, Белоруссия" class="link_select_region">Дятлово</a></li>
+            <li><a href="#" rel="г. Ельск, Белоруссия" class="link_select_region">Ельск</a></li>
+            <li><a href="#" rel="г. Жабинка, Белоруссия" class="link_select_region">Жабинка</a></li>
+            <li><a href="#" rel="г. Житковичи, Белоруссия" class="link_select_region">Житковичи</a></li>
+            <li><a href="#" rel="г. Жлобин, Белоруссия" class="link_select_region">Жлобин</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Жодино, Белоруссия" class="link_select_region">Жодино</a></li>
+            <li><a href="#" rel="г. Заславль, Белоруссия" class="link_select_region">Заславль</a></li>
+            <li><a href="#" rel="г. Иваново, Белоруссия" class="link_select_region">Иваново</a></li>
+            <li><a href="#" rel="г. Ивацевичи, Белоруссия" class="link_select_region">Ивацевичи</a></li>
+            <li><a href="#" rel="г. Ивье, Белоруссия" class="link_select_region">Ивье</a></li>
+            <li><a href="#" rel="г. Калинковичи, Белоруссия" class="link_select_region">Калинковичи</a></li>
+            <li><a href="#" rel="г. Каменец, Белоруссия" class="link_select_region">Каменец</a></li>
+            <li><a href="#" rel="г. Кировск, Белоруссия" class="link_select_region">Кировск</a></li>
+            <li><a href="#" rel="г. Клецк, Белоруссия" class="link_select_region">Клецк</a></li>
+            <li><a href="#" rel="г. Климовичи, Белоруссия" class="link_select_region">Климовичи</a></li>
+            <li><a href="#" rel="г. Кличев, Белоруссия" class="link_select_region">Кличев</a></li>
+            <li><a href="#" rel="г. Кобрин, Белоруссия" class="link_select_region">Кобрин</a></li>
+            <li><a href="#" rel="г. Копыль, Белоруссия" class="link_select_region">Копыль</a></li>
+            <li><a href="#" rel="г. Коссово, Белоруссия" class="link_select_region">Коссово</a></li>
+            <li><a href="#" rel="г. Костюковичи, Белоруссия" class="link_select_region">Костюковичи</a></li>
+            <li><a href="#" rel="г. Кричев, Белоруссия" class="link_select_region">Кричев</a></li>
+            <li><a href="#" rel="г. Крупки, Белоруссия" class="link_select_region">Крупки</a></li>
+            <li><a href="#" rel="г. Лепель, Белоруссия" class="link_select_region">Лепель</a></li>
+            <li><a href="#" rel="г. Лида, Белоруссия" class="link_select_region">Лида</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Логойск, Белоруссия" class="link_select_region">Логойск</a></li>
+            <li><a href="#" rel="г. Лунинец, Белоруссия" class="link_select_region">Лунинец</a></li>
+            <li><a href="#" rel="г. Любань, Белоруссия" class="link_select_region">Любань</a></li>
+            <li><a href="#" rel="г. Ляховичи, Белоруссия" class="link_select_region">Ляховичи</a></li>
+            <li><a href="#" rel="г. Малорита, Белоруссия" class="link_select_region">Малорита</a></li>
+            <li><a href="#" rel="г. Марьина Горка, Белоруссия" class="link_select_region">Марьина Горка</a></li>
+            <li><a href="#" rel="г. Микашевичи, Белоруссия" class="link_select_region">Микашевичи</a></li>
+            <li><a href="#" rel="г. Миоры, Белоруссия" class="link_select_region">Миоры</a></li>
+            <li><a href="#" rel="г. Могилев, Белоруссия" class="link_select_region">Могилев</a></li>
+            <li><a href="#" rel="г. Мозырь, Белоруссия" class="link_select_region">Мозырь</a></li>
+            <li><a href="#" rel="г. Молодечно, Белоруссия" class="link_select_region">Молодечно</a></li>
+            <li><a href="#" rel="г. Мосты, Белоруссия" class="link_select_region">Мосты</a></li>
+            <li><a href="#" rel="г. Мстиславль, Белоруссия" class="link_select_region">Мстиславль</a></li>
+            <li><a href="#" rel="г. Мядель, Белоруссия" class="link_select_region">Мядель</a></li>
+            <li><a href="#" rel="г. Наровля, Белоруссия" class="link_select_region">Наровля</a></li>
+            <li><a href="#" rel="г. Несвиж, Белоруссия" class="link_select_region">Несвиж</a></li>
+            <li><a href="#" rel="г. Новогрудок, Белоруссия" class="link_select_region">Новогрудок</a></li>
+            <li><a href="#" rel="г. Новолукомль, Белоруссия" class="link_select_region">Новолукомль</a></li>
+            <li><a href="#" rel="г. Новополоцк, Белоруссия" class="link_select_region">Новополоцк</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Орша, Белоруссия" class="link_select_region">Орша</a></li>
+            <li><a href="#" rel="г. Осиповичи, Белоруссия" class="link_select_region">Осиповичи</a></li>
+            <li><a href="#" rel="г. Ошмяны, Белоруссия" class="link_select_region">Ошмяны</a></li>
+            <li><a href="#" rel="г. Петриков, Белоруссия" class="link_select_region">Петриков</a></li>
+            <li><a href="#" rel="г. Пинск, Белоруссия" class="link_select_region">Пинск</a></li>
+            <li><a href="#" rel="г. Полоцк, Белоруссия" class="link_select_region">Полоцк</a></li>
+            <li><a href="#" rel="г. Поставы, Белоруссия" class="link_select_region">Поставы</a></li>
+            <li><a href="#" rel="г. Пружаны, Белоруссия" class="link_select_region">Пружаны</a></li>
+            <li><a href="#" rel="г. Речица, Белоруссия" class="link_select_region">Речица</a></li>
+            <li><a href="#" rel="г. Рогачев, Белоруссия" class="link_select_region">Рогачев</a></li>
+            <li><a href="#" rel="г. Светлогорск, Белоруссия" class="link_select_region">Светлогорск</a></li>
+            <li><a href="#" rel="г. Свислочь, Белоруссия" class="link_select_region">Свислочь</a></li>
+            <li><a href="#" rel="г. Сенно, Белоруссия" class="link_select_region">Сенно</a></li>
+            <li><a href="#" rel="г. Скидель, Белоруссия" class="link_select_region">Скидель</a></li>
+            <li><a href="#" rel="г. Славгород, Белоруссия" class="link_select_region">Славгород</a></li>
+            <li><a href="#" rel="г. Слоним, Белоруссия" class="link_select_region">Слоним</a></li>
+            <li><a href="#" rel="г. Слуцк, Белоруссия" class="link_select_region">Слуцк</a></li>
+            <li><a href="#" rel="г. Смолевичи, Белоруссия" class="link_select_region">Смолевичи</a></li>
+            <li><a href="#" rel="г. Сморгонь, Белоруссия" class="link_select_region">Сморгонь</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Солигорск, Белоруссия" class="link_select_region">Солигорск</a></li>
+            <li><a href="#" rel="г. Старые Дороги, Белоруссия" class="link_select_region">Старые Дороги</a></li>
+            <li><a href="#" rel="г. Столбцы, Белоруссия" class="link_select_region">Столбцы</a></li>
+            <li><a href="#" rel="г. Столин, Белоруссия" class="link_select_region">Столин</a></li>
+            <li><a href="#" rel="г. Толочин, Белоруссия" class="link_select_region">Толочин</a></li>
+            <li><a href="#" rel="г. Туров, Белоруссия" class="link_select_region">Туров</a></li>
+            <li><a href="#" rel="г. Узда, Белоруссия" class="link_select_region">Узда</a></li>
+            <li><a href="#" rel="г. Фаниполь, Белоруссия" class="link_select_region">Фаниполь</a></li>
+            <li><a href="#" rel="г. Хойники, Белоруссия" class="link_select_region">Хойники</a></li>
+            <li><a href="#" rel="г. Чаусы, Белоруссия" class="link_select_region">Чаусы</a></li>
+            <li><a href="#" rel="г. Чашники, Белоруссия" class="link_select_region">Чашники</a></li>
+            <li><a href="#" rel="г. Червень, Белоруссия" class="link_select_region">Червень</a></li>
+            <li><a href="#" rel="г. Чериков, Белоруссия" class="link_select_region">Чериков</a></li>
+            <li><a href="#" rel="г. Чечерск, Белоруссия" class="link_select_region">Чечерск</a></li>
+            <li><a href="#" rel="г. Шклов, Белоруссия" class="link_select_region">Шклов</a></li>
+            <li><a href="#" rel="г. Щучин, Белоруссия" class="link_select_region">Щучин</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-kz" role="tabpanel" aria-labelledby="nav-tab-kz">
+        <div class="row">
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Алматы, Казахстан" class="link_select_region">Алматы</a></li>
+            <li><a href="#" rel="г. Астана, Казахстан" class="link_select_region">Астана</a></li>
+            <li><a href="#" rel="г. Аксу, Казахстан" class="link_select_region">Аксу</a></li>
+            <li><a href="#" rel="г. Актау, Казахстан" class="link_select_region">Актау</a></li>
+            <li><a href="#" rel="г. Актобе, Казахстан" class="link_select_region">Актобе</a></li>
+            <li><a href="#" rel="г. Аркалык, Казахстан" class="link_select_region">Аркалык</a></li>
+            <li><a href="#" rel="г. Арысь, Казахстан" class="link_select_region">Арысь</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Атырау, Казахстан" class="link_select_region">Атырау</a></li>
+            <li><a href="#" rel="г. Байконыр, Казахстан" class="link_select_region">Байконыр</a></li>
+            <li><a href="#" rel="г. Балхаш, Казахстан" class="link_select_region">Балхаш</a></li>
+            <li><a href="#" rel="г. Жанаозен, Казахстан" class="link_select_region">Жанаозен</a></li>
+            <li><a href="#" rel="г. Жезказган, Казахстан" class="link_select_region">Жезказган</a></li>
+            <li><a href="#" rel="г. Капчагай, Казахстан" class="link_select_region">Капчагай</a></li>
+            <li><a href="#" rel="г. Караганда, Казахстан" class="link_select_region">Караганда</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Каражал, Казахстан" class="link_select_region">Каражал</a></li>
+            <li><a href="#" rel="г. Кентау, Казахстан" class="link_select_region">Кентау</a></li>
+            <li><a href="#" rel="г. Кокшетау, Казахстан" class="link_select_region">Кокшетау</a></li>
+            <li><a href="#" rel="г. Костанай, Казахстан" class="link_select_region">Костанай</a></li>
+            <li><a href="#" rel="г. Курчатов, Казахстан" class="link_select_region">Курчатов</a></li>
+            <li><a href="#" rel="г. Кызылорда, Казахстан" class="link_select_region">Кызылорда</a></li>
+            <li><a href="#" rel="г. Лисаковск, Казахстан" class="link_select_region">Лисаковск</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Павлодар, Казахстан" class="link_select_region">Павлодар</a></li>
+            <li><a href="#" rel="г. Петропавловск, Казахстан" class="link_select_region">Петропавловск</a></li>
+            <li><a href="#" rel="г. Приозерск, Казахстан" class="link_select_region">Приозерск</a></li>
+            <li><a href="#" rel="г. Риддер, Казахстан" class="link_select_region">Риддер</a></li>
+            <li><a href="#" rel="г. Рудный, Казахстан" class="link_select_region">Рудный</a></li>
+            <li><a href="#" rel="г. Сарань, Казахстан" class="link_select_region">Сарань</a></li>
+            <li><a href="#" rel="г. Сатпаев, Казахстан" class="link_select_region">Сатпаев</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Семей, Казахстан" class="link_select_region">Семей</a></li>
+            <li><a href="#" rel="г. Степногорск, Казахстан" class="link_select_region">Степногорск</a></li>
+            <li><a href="#" rel="г. Талдыкорган, Казахстан" class="link_select_region">Талдыкорган</a></li>
+            <li><a href="#" rel="г. Тараз, Казахстан" class="link_select_region">Тараз</a></li>
+            <li><a href="#" rel="г. Текели, Казахстан" class="link_select_region">Текели</a></li>
+            <li><a href="#" rel="г. Темиртау, Казахстан" class="link_select_region">Темиртау</a></li>
+            <li><a href="#" rel="г. Туркестан, Казахстан" class="link_select_region">Туркестан</a></li>
+          </ul>
+          <ul class="col-6 col-md-4 col-lg-2">
+            <li><a href="#" rel="г. Уральск, Казахстан" class="link_select_region">Уральск</a></li>
+            <li><a href="#" rel="г. Усть-Каменогорск, Казахстан" class="link_select_region">Усть-Каменогорск</a></li>
+            <li><a href="#" rel="г. Шахтинск, Казахстан" class="link_select_region">Шахтинск</a></li>
+            <li><a href="#" rel="г. Шымкент, Казахстан" class="link_select_region">Шымкент</a></li>
+            <li><a href="#" rel="г. Экибастуз, Казахстан" class="link_select_region">Экибастуз</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="mainmenu__search">
+    <input  type="search" id="fld-menusearch" class="search_fld" name="fld-search" placeholder="Поиск по сайту" autocomplete="off">
+    <button type="submit" id="b-menusearch" class="search_btn" title="Поиск по сайту"></button>
+
+  </div>
+
+
+
+  <div class="row">
+
+    <div class="col-md-3">
+      <div class="mainmenu__btns">
+        <button class="b-sbtn"><i class="fal fa-layer-plus"></i>Разместить обьявление</button>
+        <button class="b-sbtn"><i class="fal fa-list-alt"></i>Зарегистрировать компанию</button>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <ul class="mainmenu__links">
+        <li><a href="#"><strong>Машины и механизмы</strong></a></li>
+        <li><a href="#">Аренда</a></li>
+        <li><a href="#">Продажа</a></li>
+        <li><a href="#">Запчасти</a></li>
+        <li><a href="#">Дополнительное оборудование и аксессуары</a></li>
+        <li><a href="#">Оснастка и расходные материалы</a></li>
+        <li><a href="#">Шины</a></li>
+      </ul>
+      <ul class="mainmenu__links">
+        <li><a href="#"><strong>Производственный инвентарь</strong></a></li>
+        <li><a href="#">Верстаки, рабочие столы</a></li>
+        <li><a href="#">Емкости</a></li>
+        <li><a href="#">Стеллажи</a></li>
+        <li><a href="#">Тележки</a></li>
+        <li><a href="#">Шкафы</a></li>
+      </ul>
+      <ul class="mainmenu__links">
+        <li><a href="#"><strong>Сырье и материалы</strong></a></li>
+        <li><a href="#">Горюче-смазочные материалы</a></li>
+        <li><a href="#">Металлопрокат, металлы</a></li>
+        <li><a href="#">Промышленная химия</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <ul class="mainmenu__links">
+        <li><a href="#"><strong>Услуги и деятельность</strong></a></li>
+        <li><a href="#">Автомойки</a></li>
+        <li><a href="#">Авторазборы</a></li>
+        <li><a href="#">Автоэкспертиза</a></li>
+        <li><a href="#">Грузчики, такелажники, стропальщики</a></li>
+        <li><a href="#">Лизинг</a></li>
+        <li><a href="#">Монтаж оборудования</a></li>
+        <li><a href="#">Независимые службы аварийных комиссаров</a></li>
+        <li><a href="#">Оформление купли-продажи</a></li>
+        <li><a href="#">Оформление лицензий и разрешений</a></li>
+        <li><a href="#">Охрана</a></li>
+        <li><a href="#">Производственные услуги</a></li>
+        <li><a href="#">Ремонт и обслуживание техники и оборудования</a></li>
+        <li><a href="#">Складское хранение</a></li>
+        <li><a href="#">Страхование</a></li>
+        <li><a href="#">Строительные работы и услуги</a></li>
+        <li><a href="#">Технический осмотр транспорта</a></li>
+        <li><a href="#">Транспортные услуги</a></li>
+        <li><a href="#">Уборка территорий</a></li>
+        <li><a href="#">Шиномонтаж</a></li>
+      </ul>
+      <ul class="mainmenu__links">
+        <li><a href="#"><strong>Прочее</strong></a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <ul class="mainmenu__links">
+        <li><a href="#"><strong>Новости отрасли</strong></a></li>
+        <li><a href="#"><strong>Каталог компаний</strong></a></li>
+        <li><a href="#"><strong>Новости компаний</strong></a></li>
+        <li><a href="#"><strong>Пресс-релизы</strong></a></li>
+        <li><a href="#"><strong>Календарь событий</strong></a></li>
+        <li><a href="#"><strong>Машины и механизмы</strong></a></li>
+      </ul>
+      <ul class="mainmenu__links">
+        <li><a href="#" data-bs-toggle="modal" data-bs-target="#id_modal-userlogin"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Личный кабинет</a></li>
+      </ul>
+      <ul class="mainmenu__links">
+        <li><a href="#">Избранное<span class="bl">6</span></a></li>
+        <li><a href="#">Вы смотрели</a></li>
+        <li><a href="#">Сообщения<span class="bl">369</span></a></li>
+      </ul>
+    </div>
+
+  </div>
+
+
+
+</div>
+</nav>
+
+
+
+
+
+<div class="overlay"></div>
+
+
+
+
+
+<nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+		<li class="breadcrumb-item"><a href="#">Каталог</a></li>
+		<li class="breadcrumb-item active" aria-current="page">Страница</li>
+	</ol>
+</nav>
+
+
+
+
+
+<div class="wrap wrap--twocolumn">
+
+
+<div class="row">
+<!-- left column -->
+<div class="col-lg-9 wrap__col-left">
+
+
+	<h1>О проекте</h1>
+
+
+	<section class="pagecontent sc_pg">
+
+		<h2>«Механизация» — портал о машинах и механизмах.</h2>
+
+		<p>«Механизация» — портал о машинах и механизмах, применяемых в различных отраслях материального производства или процессах трудовой деятельности.</p>
+		<p>Портал о машинах и механизмах «Механизация» это:</p>
+		<ul>
+			<li>Каталог техники и оборудования с отзывами владельцев;</li>
+			<li>Новости отрасли;</li>
+			<li>Каталог компаний;</li>
+			<li>Доска объявлений.</li>
+		</ul>
+		<p>Наша миссия — способствовать повышению производительности труда и освобождению человека от выполнения тяжёлых, трудоёмких и утомительных операций за счет механизации производства.</p>
+
+		<h3>Портал о машинах и механизмах «Механизация»</h3>
+
+		<div class="row">
+
+			<div class="col-lg-6">
+				<p>Наша компания оказывает услуги по аренде автокранов на территории Москвы, Московской области и прилегающих областей. У нас вы можете приобрести или арендовать спецтехнику различной мощности и функциональности на выгодных условиях.</p>
+				<ul>
+					<li>Перевозка габаритных объемных грузов</li>
+					<li>Предоставление спецтехники:
+						<ul>
+							<li>Liebherr</li>
+							<li>XCMG</li>
+							<li>Галичанин</li>
+							<li>Машека</li>
+						</ul>
+					</li>
+					<li>Упаковка грузов</li>
+					<li>Организация погрузо-разгрузочных работ (погрузка негабаритных грузов)</li>
+					<li>Организация охраны грузов</li>
+					<li>Страхование грузов</li>
+				</ul>
+				<p>Услуги доступны для частных лиц и организаций с возможностью оплаты наличными и по безналичному расчету. Наши консультанты помогут подобрать модель с учетом особенностей вашего проекта и имеющихся задач.</p>
+				<p>Парк автокранов для аренды включает модели от отечественных и зарубежных производителей: <a href="#">Ивановец</a>,
+					<a href="#">Углич</a>, <a href="#">Liebherr</a>, <a href="#">XCMG</a>, <a href="#">Галичанин</a>, <a
+						href="#">Машека</a> (в том числе вездеходная техника) с грузоподъемностью от 14 до 500 тонн, вылетом стрелы от 14 до 92 метров (+ гусек).</p>
+			</div>
+
+			<div class="col-lg-6">
+				<p>Маневренные и производительные автокраны могут быть использованы для выполнения погрузочных работ, решения задач коммунальной сферы, для монтажа металлических и бетонных конструкций, перемещения тяжеловесных грузов.</p>
+				<p>Услуги доступны для частных лиц и организаций с возможностью оплаты наличными и по безналичному расчету. Наши консультанты помогут подобрать модель с учетом особенностей вашего проекта и имеющихся задач.</p>
+				<p>Парк автокранов для аренды включает модели от отечественных и зарубежных производителей: Ивановец, Углич, Liebherr, XCMG, Галичанин, Машека (в том числе вездеходная техника) с грузоподъемностью от 14 до 500 тонн, вылетом стрелы от 14 до 92 метров (+ гусек).</p>
+				<p>Наша компания оказывает услуги по аренде автокранов на территории Москвы, Московской области и прилегающих областей. У нас вы можете приобрести или арендовать спецтехнику различной мощности и функциональности на выгодных условиях.</p>
+			</div>
+
+		</div>
+
+	</section>
+
+
+
+	<section class="pagecontent sc_pg">
+
+		<h2>Простая таблица</h2>
+		<div class="table-responsive">
+			<table class="table table-hover">
+				<tr>
+					<th>Артикул</th>
+					<th><a href="#" class="th--up" title="Сортировка по возрастанию">Размер (ДхШ), см</a></th>
+					<th><a href="#" class="th--up" title="Сортировка по возрастанию">Стекло</a></th>
+					<th><a href="#" class="th--down" title="Сортировка по убыванию">Цвет фурнитуры</a></th>
+					<th><a href="#" class="th--down" title="Сортировка по убыванию">Цена, руб</a></th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>DE018R</td>
+					<td class="td--centered">100х100</td>
+					<td>Mat bronze</td>
+					<td>Золотой металлик</td>
+					<td class="td--price">18 500</td>
+					<td class="td--cart"><button title="добавить в корзину"><i class="far fa-cart-plus"></i></button></td>
+				</tr>
+				<tr>
+					<td>DE018RB</td>
+					<td class="td--centered">120х120</td>
+					<td>Mat bronze</td>
+					<td>Золотой металлик</td>
+					<td class="td--price">21 000</td>
+					<td class="td--cart"><button title="добавить в корзину"><i class="far fa-cart-plus"></i></button></td>
+				</tr>
+				<tr>
+					<td>DE018RC</td>
+					<td class="td--centered">100х100</td>
+					<td>Silver</td>
+					<td>Серый</td>
+					<td class="td--price">14 300</td>
+					<td class="td--cart"><button title="добавить в корзину"><i class="far fa-cart-plus"></i></button></td>
+				</tr>
+				<tr>
+					<td>DE018RCМ</td>
+					<td class="td--centered">120х120</td>
+					<td>Silver</td>
+					<td>Серый</td>
+					<td class="td--price">16 500</td>
+					<td class="td--cart"><button title="добавить в корзину"><i class="far fa-cart-plus"></i></button></td>
+				</tr>
+			</table>
+		</div>
+		<p>Услуги доступны для частных лиц и организаций с возможностью оплаты наличными и по безналичному расчету. Наши консультанты помогут подобрать модель с учетом особенностей вашего проекта и имеющихся задач.</p>
+
+		<h2>Адаптивная таблица</h2>
+		<div class="divtable divtable-hover">
+			<div class="row row--th">
+				<div class="dt-th">Размер (ШxДxВ), см</div>
+				<div class="dt-th"><a href="#" class="th--up" rel="sort_info__glass_color">Стекло</a></div>
+				<div class="dt-th"><a href="#" class="th--up" rel="sort_info__accessories_color">Цвет фурнитуры</a></div>
+				<div class="dt-th th--price"><a href="#" class="th--down" rel="sort_info__price">Цена, руб.</a></div>
+				<div class="dt-th th--cart">&nbsp;</div>
+			</div>
+			<div class="row row--td">
+				<div class="dt-td"><span class="dt-tt">Размер (ШxДxВ), см:</span>80x80x200</div>
+				<div class="dt-td"><span class="dt-tt">Стекло:</span>Бесцветное 6 мм</div>
+				<div class="dt-td"><span class="dt-tt">Цвет фурнитуры:</span>Хром матовый</div>
+				<div class="dt-td td--price"><span class="dt-tt">Цена, руб.:</span>17 800 000</div>
+				<div class="dt-td td--cart"><button title="заказать"><i class="far fa-cart-plus"></i></button></div>
+			</div>
+			<div class="row row--td">
+				<div class="dt-td"><span class="dt-tt">Размер (ШxДxВ), см:</span>80x80x220</div>
+				<div class="dt-td"><span class="dt-tt">Стекло:</span>Бесцветное 6 мм с гравировкой Цветок лотоса в утреннем тумане</div>
+				<div class="dt-td"><span class="dt-tt">Цвет фурнитуры:</span>Хром матовый</div>
+				<div class="dt-td td--price"><span class="dt-tt">Цена, руб.:</span>18 300</div>
+				<div class="dt-td td--cart"><button title="заказать"><i class="far fa-cart-plus"></i></button></div>
+			</div>
+			<div class="row row--td">
+				<div class="dt-td"><span class="dt-tt">Размер (ШxДxВ), см:</span>100x100x220</div>
+				<div class="dt-td"><span class="dt-tt">Стекло:</span>Бесцветное 6 мм</div>
+				<div class="dt-td"><span class="dt-tt">Цвет фурнитуры:</span>Хром матовый</div>
+				<div class="dt-td td--price"><span class="dt-tt">Цена, руб.:</span>19 300</div>
+				<div class="dt-td td--cart"><button title="заказать"><i class="far fa-cart-plus"></i></button></div>
+			</div>
+			<div class="row row--td">
+				<div class="dt-td"><span class="dt-tt">Размер (ШxДxВ), см:</span>80x80x200</div>
+				<div class="dt-td"><span class="dt-tt">Стекло:</span>Бесцветное 6 мм</div>
+				<div class="dt-td"><span class="dt-tt">Цвет фурнитуры:</span>Хром матовый</div>
+				<div class="dt-td td--price"><span class="dt-tt">Цена, руб.:</span>17 000</div>
+				<div class="dt-td td--cart"><button title="заказать"><i class="far fa-cart-plus"></i></button></div>
+			</div>
+			<div class="row row--td">
+				<div class="dt-td"><span class="dt-tt">Размер (ШxДxВ), см:</span>80x80x220</div>
+				<div class="dt-td"><span class="dt-tt">Стекло:</span>Цветное 8 мм</div>
+				<div class="dt-td"><span class="dt-tt">Цвет фурнитуры:</span>Хром блестящий</div>
+				<div class="dt-td td--price"><span class="dt-tt">Цена, руб.:</span>18 300</div>
+				<div class="dt-td td--cart"><button title="заказать"><i class="far fa-cart-plus"></i></button></div>
+			</div>
+			<div class="row row--td">
+				<div class="dt-td"><span class="dt-tt">Размер (ШxДxВ), см:</span>100x100x220</div>
+				<div class="dt-td"><span class="dt-tt">Стекло:</span>Бесцветное 6 мм</div>
+				<div class="dt-td"><span class="dt-tt">Цвет фурнитуры:</span>Хром матовый</div>
+				<div class="dt-td td--price"><span class="dt-tt">Цена, руб.:</span>19 300</div>
+				<div class="dt-td td--cart"><button title="заказать"><i class="far fa-cart-plus"></i></button></div>
+			</div>
+			<div class="row row--td">
+				<div class="dt-td"><span class="dt-tt">Размер (ШxДxВ), см:</span>80x80x200</div>
+				<div class="dt-td"><span class="dt-tt">Стекло:</span>Бесцветное 6 мм</div>
+				<div class="dt-td"><span class="dt-tt">Цвет фурнитуры:</span>Хром матовый</div>
+				<div class="dt-td td--price"><span class="dt-tt">Цена, руб.:</span>17 000</div>
+				<div class="dt-td td--cart"><button title="заказать"><i class="far fa-cart-plus"></i></button></div>
+			</div>
+			<div class="row row--td">
+				<div class="dt-td"><span class="dt-tt">Размер (ШxДxВ), см:</span>80x80x220</div>
+				<div class="dt-td"><span class="dt-tt">Стекло:</span>Цветное 8 мм</div>
+				<div class="dt-td"><span class="dt-tt">Цвет фурнитуры:</span>Хром блестящий</div>
+				<div class="dt-td td--price"><span class="dt-tt">Цена, руб.:</span>18 300</div>
+				<div class="dt-td td--cart"><button title="заказать"><i class="far fa-cart-plus"></i></button></div>
+			</div>
+			<div class="row row--td">
+				<div class="dt-td"><span class="dt-tt">Размер (ШxДxВ), см:</span>100x100x220</div>
+				<div class="dt-td"><span class="dt-tt">Стекло:</span>Бесцветное 6 мм</div>
+				<div class="dt-td"><span class="dt-tt">Цвет фурнитуры:</span>Хром матовый</div>
+				<div class="dt-td td--price"><span class="dt-tt">Цена, руб.:</span>19 300</div>
+				<div class="dt-td td--cart"><button title="заказать"><i class="far fa-cart-plus"></i></button></div>
+			</div>
+		</div>
+		<p>Услуги доступны для частных лиц и организаций с возможностью оплаты наличными и по безналичному расчету. Наши консультанты помогут подобрать модель с учетом особенностей вашего проекта и имеющихся задач.</p>
+
+	</section>
+
+
+
+	<section class="pagecontent sc_pg">
+
+		<h2>Карточки</h2>
+
+		<div class="card">
+			<div class="card-header">Простая карточка</div>
+			<div class="card-body">
+				<p>Услуги доступны для частных лиц и организаций с возможностью оплаты наличными и по безналичному расчету. Наши
+					консультанты помогут подобрать модель с учетом особенностей вашего проекта и имеющихся задач.</p>
+			</div>
+		</div>
+
+		<p>Услуги доступны для частных лиц и организаций с возможностью оплаты наличными и по безналичному расчету. Наши
+			консультанты помогут подобрать модель с учетом особенностей вашего проекта и имеющихся задач.</p>
+		<p>Парк автокранов для аренды включает модели от отечественных и зарубежных производителей: Ивановец, Углич,
+			Liebherr,	XCMG, Галичанин, Машека (в том числе вездеходная техника) с грузоподъемностью от 14 до 500 тонн, вылетом стрелы
+			от 14	до 92 метров (+ гусек).</p>
+
+		<div class="card card--warn">
+			<div class="card-header">Примечание</div>
+			<div class="card-body">
+				<p>Услуги доступны для частных лиц и организаций с возможностью оплаты наличными и по безналичному расчету. Наши
+					консультанты помогут подобрать модель с учетом особенностей вашего проекта и имеющихся задач.</p>
+			</div>
+		</div>
+
+	</section>
+
+
+
+
+</div>
+<!-- end left column -->
+<!-- right column -->
+<div class="col-lg-3 hidden-lg-down wrap__col-right col-right--padded-top">
+
+
+
+	<div class="col-adv sticked">
+		
+		<div class="block-adv">
+			<a href="#"><img src="img/_adv1.jpg" width="100%" alt=""></a>
+		</div>
+
+		<div class="block-adv">
+			<a href="#"><img src="img/_adv2.jpg" width="100%" alt=""></a>
+		</div>
+
+		<div class="adv">
+			<a href="#"><img src="img/_adv3.jpg" width="100%" alt=""></a>
+		</div>
+		
+	</div>
+
+
+
+</div>
+<!-- end right column -->
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="wrap">
+
+
+
+	<section class="pagecontent sc_pg">
+
+		<h2>Бизнес образование в Москве и России</h2>
+
+		<div class="img-inner float-left">
+			<img src="img/cl-r.jpg" width="300" alt="">
+			<p>Представители бизнеса и университетской науки упорно не замечают разницы между МВА и магистратурой.</p>
+		</div>
+		<p>Бизнес-образование в России имеет статус дополнительного профессионального образования.Это означает, что поступить на обучение можно, уже имея высшее образование (и стаж практической деятельности от 2-х лет).</p>
+		<div class="img-inner float-right">
+			<a href="#">
+				<img src="img/cl-l.jpg" width="300" alt="">
+				<p>Аккредитация МВА бизнес-школы — гарантия качества или соответствие отвлеченному стандарту?</p>
+			</a>
+		</div>
+		<p><a href="#">Программы MBA</a> (Master of Business Administration, Мастер делового администирования) — один из наиболее эффективных путей для получения систематических знаний в области создания и управления бизнесом, обмена опытом и расширения деловых связей.</p>
+		<p>После окончания программы выпускнику выдается диплом МБА образца бизнес-школы, диплом о профпереподготовке установленного (государством) образца и, в случаях "программы двух дипломов" — дополнительно диплом бизнес-школы партнера.</p>
+
+		<p>Распространенные формы обучения на МБА: очная с отрывом от работы (full-time), очная без отрыва от работы (part-time или очно-заочная, или вечерняя), модульная, а также дистанционно. Элементы дистанционного обучения используются в программах формата blended learning, в котором самостоятельное изучение бизнес курсов МБА и on-line консультации с преподавателями сочетаются с посещениями бизнес школы.</p>
+		<p>В России образование можно получить в Москве, Петербурге, Нижнем Новгороде, Самаре, Казани, Волгограде, Екатеринбурге, Ростове на Дону, Новосибирске, Красноярске, Иркутске и др.</p>
+
+	</section>
+
+
+
+</div>
+
+
+
+
+
+<footer>
+<div class="wrap-footer">
+
+  <div class="block-footer">
+    <ul class="footer__menu">
+      <li><a href="#">О проекте</a></li>
+      <li><a href="#">Реклама на сайте</a></li>
+      <li><a href="#">Обратная связь</a></li>
+    </ul>
+    <ul class="footer__soc">
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-vk"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+    <ul class="footer__menu">
+      <li><a href="#">Правила пользования</a></li>
+      <li><a href="#">Конфиденциальность</a></li>
+      <li><a href="#">Информация для правообладателей</a></li>
+    </ul>
+  </div>
+
+  <div class="block-footer">
+    <div class="footer__copy">
+      <strong>© 2012—2022 Механизация.ру</strong><br>
+      Портал о машинах и механизмах.
+    </div>
+    <div class="promoting">
+      <a href="https://www.promoting.ru/" target="_blank" title="Сделано в Promoting"><img src="img/promoting.png" width="124" height="31" alt="Сделано в Promoting"></a>
+    </div>
+  </div>
+
+  <div class="footer__note">
+    Мы используем информацию, зарегистрированную в файлах "Cookies", в частности, в рекламных и статистических целях, а также для того, чтобы адаптировать наш сайт к индивидуальным потребностям пользователей. Вы можете изменить настройки "Cookies" в вашем браузере. Если вы оставите эти настройки без изменений, Cookie-файлы будут сохранены в памяти устройста. Изменение настроек файлов "Cookies" может ограничить функциональность сайта. Продолжая пользоваться сайтом, вы соглашаетесь с условиями настоящего <a href="#">Положения</a>.
+  </div>
+
+</div>
+</footer>
+
+
+
+
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+*.rar
+bk0001.psd
+logos.psd
+materials/
+screenshots/
+_PROJECT/node_modules/
+_PROJECT/.idea/

@@ -1,0 +1,235 @@
+.block-noticelist {
+  padding: 1.5rem 1.5rem 1.5rem 3rem;
+  transition: 0.3s;
+
+  @include media-breakpoint-down(lg) {
+    padding: 1.5rem;
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  > a {
+    text-decoration: none;
+  }
+
+  .noticelist {
+    display: flex;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+
+    @include media-breakpoint-down(md) {
+      display: block;
+    }
+
+    &:hover {
+
+      .descript_title {
+        color: $c-orange-dark;
+      }
+
+    }
+
+    > a {
+      text-decoration: none;
+    }
+
+  }
+
+  .b-tofav {
+    top: 1.3rem;
+  }
+
+  .noticelist__pics {
+    width: 33%;
+    max-width: 250px;
+    margin-right: 3rem;
+
+    @include media-breakpoint-down(lg) {
+      margin-right: 1.5rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      margin: 0 0 3rem 0;
+      max-width: 320px;
+    }
+
+  }
+
+  .noticelist__descript {
+    position: relative;
+    width: 66%;
+
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+
+  }
+
+  .descript_title {
+    font:  $font-hdr;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: $c-black;
+  }
+
+  .descript_note {
+    color: $color-text;
+  }
+
+  .descript_infos {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  .descript_price {
+    font:  $font-hdr;
+    font-weight: bold;
+    color: $c-black;
+    margin-top: 1rem;
+  }
+
+  .noticelist_type {
+    font-family: $font-family-narrow;
+    color: $c-gray-light;
+    line-height: $line-height-min;
+  }
+
+  .noticelist_date {
+    font-family: $font-family-narrow;
+    color: $c-gray-light;
+    line-height: $line-height-min;
+    margin-top: 1rem;
+  }
+
+  .company_name {
+    display: inline-block;
+    font-family: $font-family-narrow;
+    font-size: $font-size-basemax;
+    font-weight: bold;
+    color: $c-black;
+    text-decoration: none;
+    line-height: $line-height-min;
+    margin-bottom: 0.5rem;
+    margin-right: 4rem;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 1rem;
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $color-link-hover;
+    }
+
+  }
+
+  .company_address {
+    font-family: $font-family-narrow;
+    font-size: $font-size-base;
+    line-height: $line-height-min;
+    color: $c-gray;
+  }
+
+  .company_infos {
+    margin-top: 1rem;
+    font-family: $font-family-narrow;
+    font-size: $font-size-base;
+    line-height: $line-height-min;
+  }
+
+  .company_btns {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
+}
+
+
+.block-noticeparam {
+  margin-bottom: 3rem;
+
+  .row {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-bottom: dotted 1px #cccccc;
+
+    &:first-child {
+      border-top: dotted 1px #cccccc;
+    }
+
+  }
+
+  > div {
+    line-height: 1.2;
+  }
+
+  .np-prop {
+    color: $c-gray-light;
+  }
+
+  .np-val {
+    color: $c-black;
+  }
+
+  .company_btns {
+
+    &.np-prop {
+      //margin-top: 0.5rem;
+      align-self: center;
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 1rem;
+      }
+
+    }
+
+  }
+
+}
+
+
+.block-notice {
+  margin-bottom: 3rem;
+  font-size: $font-size-basemax;
+}
+
+
+.notice-premium:before {
+  font-family: $fontawesome;
+  font-size: 1.4rem;
+  content: "\f521";
+  color: $c-orange;
+  margin-right: 0.8rem;
+  position: relative;
+  top: -2px;
+}
+
+.noticelist__premium {
+  position: absolute;
+  z-index: 9;
+  top: 0.75rem;
+  left: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  background: transparentize($c-white, 0.3);
+  border-radius: $border-radius;
+
+  &:before {
+    font-family: $fontawesome;
+    font-size: 1.5rem;
+    content: "\f521";
+    color: $c-orange-dark;
+  }
+
+}
+

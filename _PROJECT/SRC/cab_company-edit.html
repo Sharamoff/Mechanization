@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<title>Механизация.ру</title>
+
+	<link href="css/vendor.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/addit.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+
+
+//= layout/_header.html
+
+
+
+
+
+//= layout/_mainmenu.html
+
+
+
+
+
+<nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+		<li class="breadcrumb-item"><a href="#">Личный кабинет</a></li>
+		<li class="breadcrumb-item active" aria-current="page">Редактирование профиля</li>
+	</ol>
+</nav>
+
+
+
+
+
+<div class="wrap wrap--twocolumn">
+<div class="row">
+<!-- left column -->
+<div class="col-lg-9 wrap__col-left">
+
+
+
+	<h1>Редактирование профиля</h1>
+
+
+
+	<form name="fm_companyedit">
+
+
+
+		<section class="pagecontent sc_pg-companyedit pg-cab">
+
+			<h2>Общая информация</h2>
+
+			<div class="panel">
+
+				<div class="block-edit">
+					<div class="row">
+						<label class="col-sm-4 col-form-label">Логотип:</label>
+						<div class="col-sm-8 val">
+							<div class="company-logo">
+								<img src="img/l-lg1.png" alt="ООО «НАК Машинери»">
+							</div>
+							<div class="row">
+								<div class="col-auto">
+									<div class="b-inputphoto"><input type="file" accept=".jpg,.jpeg,.png,.gif" title="Загрузить логотип"/><span><i class="fas fa-camera"></i>Загрузить логотип</span></div>
+								</div>
+								<div class="col-auto">
+									<button class="b-itool"><i class="fal fa-minus-circle"></i>Удалить логотип</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label class="col-sm-4 col-form-label">Обложка:</label>
+						<div class="col-sm-8 val">
+							<div class="company-collage">
+								<img src="img/co-cl1.jpg" alt="ООО «НАК Машинери»">
+							</div>
+							<div class="row">
+								<div class="col-auto">
+									<div class="b-inputphoto"><input type="file" accept=".jpg,.jpeg,.png,.gif" title="Загрузить обложку"/><span><i class="fas fa-camera"></i>Загрузить обложку</span></div>
+								</div>
+								<div class="col-auto">
+									<button class="b-itool"><i class="fal fa-minus-circle"></i>Удалить обложку</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label for="fld_cabcompany__name" class="col-sm-4 col-form-label required">Название компании:</label>
+						<div class="col-sm-8 val">
+							<input type="text" class="form-control" id="fld_cabcompany__name">
+							<p class="form-note"><i>Пример:</i> Портал путешествий «Турсводка»</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label for="fld_cabcompany__uname" class="col-sm-4 col-form-label required">Юридическое название компании:</label>
+						<div class="col-sm-8 val">
+							<input type="text" class="form-control" id="fld_cabcompany__uname">
+							<p class="form-note"><i>Пример:</i> ООО «Промотитнг»</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label for="fld_cabcompany__day" class="col-sm-4 col-form-label required">Дата основания компании:</label>
+						<div class="col-sm-8 val">
+							<div class="row">
+								<div class="col-auto">
+									<select id="fld_cabcompany__day" class="form-select">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="12">13</option>
+										<option value="12">14</option>
+										<option value="12">15</option>
+										<option value="12">16</option>
+										<option value="12">17</option>
+										<option value="12">18</option>
+										<option value="12">19</option>
+										<option value="12">20</option>
+										<option value="12">21</option>
+										<option value="12">22</option>
+										<option value="12">23</option>
+										<option value="12">24</option>
+										<option value="12">25</option>
+										<option value="12">26</option>
+										<option value="12">27</option>
+										<option value="12">28</option>
+										<option value="12">29</option>
+										<option value="12" selected="">30</option>
+										<option value="12">31</option>
+									</select>
+								</div>
+								<div class="col-auto">
+									<select id="fld_cabcompany__month" class="form-select">
+										<option value="1">Январь</option>
+										<option value="2">Февраль</option>
+										<option value="3">Март</option>
+										<option value="4">Апрель</option>
+										<option value="5">Май</option>
+										<option value="6">Июнь</option>
+										<option value="7">Июль</option>
+										<option value="8">Август</option>
+										<option value="9" selected="">Сентябрь</option>
+										<option value="10">Октябрь</option>
+										<option value="11">Ноябрь</option>
+										<option value="12">Декабрь</option>
+									</select>
+								</div>
+								<div class="col-auto">
+									<select name="fld_cabcompany__year" class="form-select">
+										<option value="2014">2018</option>
+										<option value="2015">2019</option>
+										<option value="2016">2020</option>
+										<option value="2017">2021</option>
+										<option value="2018" selected="">2022</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label class="col-sm-4 col-form-label required">Профиль компании:</label>
+						<div class="col-sm-8 val">
+							<input class="form-check-input" type="radio" name="fld_cabcompany__profil" value="1" id="fld_cabcompany__profil_1" checked="">
+							<label class="form-check-label" for="fld_cabcompany__profil_1">Турагенство</label>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input class="form-check-input" type="radio" name="fld_cabcompany__profil" value="2" id="fld_cabcompany__profil_2">
+							<label class="form-check-label" for="fld_cabcompany__profil_2">Туроператор</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label for="fld_cabcompany__note" class="col-sm-4 col-form-label">Описание компании:</label>
+						<div class="col-sm-8 val">
+							<textarea id="fld_cabcompany__note" cols="30" rows="5" class="form-control"></textarea>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label for="fld_cabcompany__reestrnum" class="col-sm-4 col-form-label">Серия и реестровый номер оператора:</label>
+						<div class="col-sm-5 val">
+							<input type="text" class="form-control" id="fld_cabcompany__reestrnum">
+							<p class="form-note"><i>Пример:</i> MBT-000001</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+		<section class="pagecontent sc_pg-companyedit pg-cab">
+
+			<h2>Контактная информация для публикации</h2>
+
+			<div class="panel">
+
+				<div class="block-edit">
+					<div class="row">
+						<label for="fld_cabcompany__country" class="col-sm-4 col-form-label required">Страна:</label>
+						<div class="col-sm-5 val">
+							<select name="fld_cabcompany__country" class="form-select" id="fld_cabcompany__country">
+								<option value="0">--- не имеет значения ---</option>
+								<option value="2805">Австралия</option>
+								<option value="2864">Австрия</option>
+								<option value="2897">Азербайджан</option>
+								<option value="2990">Ангуилья</option>
+								<option value="2994">Аргентина</option>
+								<option value="3062">Армения</option>
+								<option value="3071">Арулько</option>
+								<option value="3074">Беларусь</option>
+								<option value="3229">Белиз</option>
+								<option value="3232">Бельгия</option>
+								<option value="3260">Бермуды</option>
+								<option value="3263">Болгария</option>
+								<option value="3323">Бразилия</option>
+								<option value="3472">Великобритания</option>
+								<option value="3786">Венгрия</option>
+								<option value="3834">Вьетнам</option>
+								<option value="3857">Гаити</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label for="fld_cabcompany__region" class="col-sm-4 col-form-label">Регион:</label>
+						<div class="col-sm-5 val">
+							<select name="fld_cabcompany__region" class="form-select" id="fld_cabcompany__region">
+								<option value="0">--- не имеет значения ---</option>
+								<option value="2" selected="">Москва и Московская обл.</option>
+								<option value="335">Санкт-Петербург и область</option>
+								<option value="440">Адыгея</option>
+								<option value="443">Алтайский край</option>
+								<option value="506">Амурская обл.</option>
+								<option value="534">Архангельская обл.</option>
+								<option value="566">Астраханская обл.</option>
+								<option value="581">Башкортостан(Башкирия)</option>
+								<option value="638">Белгородская обл.</option>
+								<option value="657">Брянская обл.</option>
+								<option value="694">Бурятия</option>
+								<option value="726">Владимирская обл.</option>
+								<option value="757">Волгоградская обл.</option>
+								<option value="793">Вологодская обл.</option>
+								<option value="819">Воронежская обл.</option>
+								<option value="854">Дагестан</option>
+								<option value="897">Еврейская обл.</option>
+								<option value="899">Ивановская обл.</option>
+								<option value="928">Иркутская обл.</option>
+								<option value="979">Кабардино-Балкария</option>
+								<option value="989">Калининградская обл.</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label for="fld_cabcompany__city" class="col-sm-4 col-form-label">Город:</label>
+						<div class="col-sm-5 val">
+							<select name="fld_cabcompany__city" class="form-select" id="fld_cabcompany__city">
+								<option value="0">--- не имеет значения ---</option>
+								<option value="3" selected="">Москва</option>
+								<option value="164">Абрамцево</option>
+								<option value="165">Алабино</option>
+								<option value="166">Апрелевка</option>
+								<option value="167">Архангельское</option>
+								<option value="168">Ашитково</option>
+								<option value="169">Байконур</option>
+								<option value="170">Бакшеево</option>
+								<option value="171">Балашиха</option>
+								<option value="172">Барыбино</option>
+								<option value="173">Белоомут</option>
+								<option value="174">Белые Столбы</option>
+								<option value="175">Бородино</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label for="fld_cabcompany__cityother" class="col-sm-4 col-form-label">Другой город:</label>
+						<div class="col-sm-5 val">
+							<input type="text" class="form-control" id="fld_cabcompany__cityother">
+							<p class="form-note"><i>Пример:</i> Озерск</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label for="fld_cabcompany__address" class="col-sm-4 col-form-label">Адрес:</label>
+						<div class="col-sm-8 val">
+							<input type="text" class="form-control" id="fld_cabcompany__address">
+							<p class="form-note"><i>Пример:</i> ул. Дмитрия Ульянова, д. 16, корп. 2, оф. 61</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label for="fld_cabcompany__tel" class="col-sm-4 col-form-label">Телефон:</label>
+						<div class="col-sm-5 val">
+							<input type="text" class="form-control" id="fld_cabcompany__tel">
+							<p class="form-note"><i>Пример:</i> +7 495 982-37-25</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label for="fld_cabcompany__www" class="col-sm-4 col-form-label">WWW:</label>
+						<div class="col-sm-5 val">
+							<input type="text" class="form-control" id="fld_cabcompany__www">
+							<p class="form-note"><i>Пример:</i> www.tursvodka.ru</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label for="fld_cabcompany__fwalk" class="col-sm-4 col-form-label">Как пройти:</label>
+						<div class="col-sm-8 val">
+							<textarea id="fld_cabcompany__fwalk" cols="30" rows="3" class="form-control"></textarea>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label for="fld_cabcompany__fget" class="col-sm-4 col-form-label">Как проехать:</label>
+						<div class="col-sm-8 val">
+							<textarea id="fld_cabcompany__fget" cols="30" rows="3" class="form-control"></textarea>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label class="col-sm-4 col-form-label">Дополнительные оффисы продаж:</label>
+						<div class="col-sm-8 val">
+							<div class="addit-panel">
+								<input type="text" class="form-control" value="Россия, Тверская обл., Тверь, ул. Благоева, д. 5">
+								<button class="b-microtool"><i class="fal fa-times"></i>удалить</button>
+							</div>
+							<div class="addit-panel">
+								<input type="text" class="form-control" value="Россия, Тверская обл., Тверь, ул. 148 Партизан, д.14, корпус 5, офис 6">
+								<button class="b-microtool"><i class="fal fa-times"></i>удалить</button>
+							</div>
+							<button class="b-itool"><i class="fal fa-plus-circle"></i>Добавить офис продаж</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+		<section class="pagecontent sc_pg-companyedit pg-cab">
+
+			<h2>Контактная информация для техподдержки</h2>
+
+			<div class="panel">
+
+				<div class="block-edit">
+					<div class="row">
+						<label for="fld_cabcompany__сname" class="col-sm-4 col-form-label">Имя:</label>
+						<div class="col-sm-8 val">
+							<input type="text" class="form-control" id="fld_cabcompany__сname">
+							<p class="form-note"><i>Пример:</i> Иван Иванов</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label for="fld_cabcompany__pos" class="col-sm-4 col-form-label">Должность:</label>
+						<div class="col-sm-8 val">
+							<input type="text" class="form-control" id="fld_cabcompany__pos">
+							<p class="form-note"><i>Пример:</i> Директор по рекламе</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label for="fld_cabcompany__сtel" class="col-sm-4 col-form-label">Телефон:</label>
+						<div class="col-sm-4 val">
+							<input type="text" class="form-control" id="fld_cabcompany__сtel">
+							<p class="form-note"><i>Пример:</i> +7 495 982-37-25</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label class="col-sm-4 col-form-label">Время работы:</label>
+						<div class="col-sm-8">
+							<div class="addit-panel">
+								<div class="row">
+									<div class="col-auto val">
+										<input type="checkbox" class="form-check-input" id="fld_t1" checked>
+										<label class="form-check-label" for="fld_t1">Пн</label>
+									</div>
+									<div class="col-auto val">
+										<input type="checkbox" class="form-check-input" id="fld_t2" checked>
+										<label class="form-check-label" for="fld_t2">Вт</label>
+									</div>
+									<div class="col-auto val">
+										<input type="checkbox" class="form-check-input" id="fld_t3" checked>
+										<label class="form-check-label" for="fld_t3">Ср</label>
+									</div>
+									<div class="col-auto val">
+										<input type="checkbox" class="form-check-input" id="fld_t4" checked>
+										<label class="form-check-label" for="fld_t4">Чт</label>
+									</div>
+									<div class="col-auto val">
+										<input type="checkbox" class="form-check-input" id="fld_t5" checked>
+										<label class="form-check-label" for="fld_t5">Пт</label>
+									</div>
+									<div class="col-auto val">
+										<input type="checkbox" class="form-check-input" id="fld_t6">
+										<label class="form-check-label" for="fld_t6">Сб</label>
+									</div>
+									<div class="col-auto val">
+										<input type="checkbox" class="form-check-input" id="fld_t7">
+										<label class="form-check-label" for="fld_t7">Вс</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-auto val">
+										<input type="time" value="09:00" class="form-control">
+									</div>
+									<div class="col-auto val">
+										<input type="time" value="21:00" class="form-control">
+									</div>
+								</div>
+								<button class="b-microtool"><i class="fal fa-times"></i>удалить</button>
+							</div>
+							<div class="addit-panel">
+								<div class="row">
+									<div class="col-auto val">
+										<input type="checkbox" class="form-check-input" id="fld_t11">
+										<label class="form-check-label" for="fld_t11">Пн</label>
+									</div>
+									<div class="col-auto val">
+										<input type="checkbox" class="form-check-input" id="fld_t12">
+										<label class="form-check-label" for="fld_t12">Вт</label>
+									</div>
+									<div class="col-auto val">
+										<input type="checkbox" class="form-check-input" id="fld_t13">
+										<label class="form-check-label" for="fld_t13">Ср</label>
+									</div>
+									<div class="col-auto val">
+										<input type="checkbox" class="form-check-input" id="fld_t14">
+										<label class="form-check-label" for="fld_t14">Чт</label>
+									</div>
+									<div class="col-auto val">
+										<input type="checkbox" class="form-check-input" id="fld_t15">
+										<label class="form-check-label" for="fld_t15">Пт</label>
+									</div>
+									<div class="col-auto val">
+										<input type="checkbox" class="form-check-input" id="fld_t16" checked>
+										<label class="form-check-label" for="fld_t16">Сб</label>
+									</div>
+									<div class="col-auto val">
+										<input type="checkbox" class="form-check-input" id="fld_t17" checked>
+										<label class="form-check-label" for="fld_t17">Вс</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-auto val">
+										<input type="time" value="10:00" class="form-control">
+									</div>
+									<div class="col-auto val">
+										<input type="time" value="15:00" class="form-control">
+									</div>
+								</div>
+								<button class="b-microtool"><i class="fal fa-times"></i>удалить</button>
+							</div>
+							<button class="b-itool"><i class="fal fa-plus-circle"></i>Добавить время работы</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+		<section class="pagecontent sc_pg-companyedit pg-cab">
+
+			<h2>Виды туров</h2>
+
+			<div class="panel">
+
+				<div class="block-edit">
+					<div class="row">
+						<label class="col-sm-4 col-form-label">Виды туров:</label>
+						<div class="col-sm-4 val">
+							<input type="checkbox" class="form-check-input" checked="">
+							<label class="form-check-label">Автобусные туры</label>
+							<br>
+							<input type="checkbox" class="form-check-input" checked="">
+							<label class="form-check-label">Активный отдых</label>
+							<br>
+							<input type="checkbox" class="form-check-input" checked="">
+							<label class="form-check-label">Горнолыжные туры</label>
+							<br>
+							<input type="checkbox" class="form-check-input" checked="">
+							<label class="form-check-label">Горящие туры</label>
+							<br>
+							<input type="checkbox" class="form-check-input" checked="">
+							<label class="form-check-label">Детский отдых</label>
+						</div>
+						<div class="col-sm-4 val">
+							<input type="checkbox" class="form-check-input" checked="">
+							<label class="form-check-label">Пляжный отдых</label>
+							<br>
+							<input type="checkbox" class="form-check-input" checked="">
+							<label class="form-check-label">Рекламные туры</label>
+							<br>
+							<input type="checkbox" class="form-check-input" checked="">
+							<label class="form-check-label">Свадебные путешествия</label>
+							<br>
+							<input type="checkbox" class="form-check-input" checked="">
+							<label class="form-check-label">Туры выходного дня</label>
+							<br>
+							<input type="checkbox" class="form-check-input" checked="">
+							<label class="form-check-label">Туры на 23 февраля</label>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+		<section class="pagecontent sc_pg-companyedit pg-cab">
+
+			<h2>В номерах</h2>
+
+			<div class="panel">
+
+				<div class="block-edit">
+					<div class="row">
+						<label class="col-sm-4 val">
+							<input class="form-check-input" type="checkbox" id="fld_val1" checked>
+							<label class="form-check-label" for="fld_val1">Ванная</label>
+						</label>
+						<div class="col-sm-6 val">
+							<input type="text" class="form-control" placeholder="примечание">
+						</div>
+						<div class="col-sm-2 col-6 val">
+							<select class="form-select">
+								<option value="0" selected="">бесплатно</option>
+								<option value="1">платно</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label class="col-sm-4 val">
+							<input class="form-check-input" type="checkbox" id="fld_val2" checked>
+							<label class="form-check-label" for="fld_val2">Душ</label>
+						</label>
+						<div class="col-sm-6 val">
+							<input type="text" class="form-control" placeholder="примечание">
+						</div>
+						<div class="col-sm-2 col-6 val">
+							<select class="form-select">
+								<option value="0" selected="">бесплатно</option>
+								<option value="1">платно</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label class="col-sm-4 val">
+							<input class="form-check-input" type="checkbox" id="fld_val3" checked>
+							<label class="form-check-label" for="fld_val3">Кухонный уголок</label>
+						</label>
+						<div class="col-sm-6 val">
+							<input type="text" class="form-control" placeholder="примечание">
+						</div>
+						<div class="col-sm-2 col-6 val">
+							<select class="form-select">
+								<option value="0" selected="">бесплатно</option>
+								<option value="1">платно</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label class="col-sm-4 val">
+							<input class="form-check-input" type="checkbox" id="fld_val4" checked>
+							<label class="form-check-label" for="fld_val4">Балкон</label>
+						</label>
+						<div class="col-sm-6 val">
+							<input type="text" class="form-control" placeholder="примечание">
+						</div>
+						<div class="col-sm-2 col-6 val">
+							<select class="form-select">
+								<option value="0" selected="">бесплатно</option>
+								<option value="1">платно</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-edit">
+					<div class="row">
+						<label class="col-sm-4 val">
+							<input class="form-check-input" type="checkbox" id="fld_val5" checked>
+							<label class="form-check-label" for="fld_val5">Невыносимая тяжесть бытия</label>
+						</label>
+						<div class="col-sm-6 val">
+							<input type="text" class="form-control" placeholder="примечание">
+						</div>
+						<div class="col-sm-2 col-6 val">
+							<select class="form-select">
+								<option value="0" selected="">бесплатно</option>
+								<option value="1">платно</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+		<button class="b-btn m-auto" type="submit">Сохранить изменения</button>
+
+
+
+	</form>
+
+
+
+</div>
+<!-- end left column -->
+<!-- right column -->
+<div class="col-lg-3 hidden-lg-down wrap__col-right col-right--padded-top">
+
+
+
+	<div class="col-adv sticked">
+		
+		<div class="block-adv">
+			<a href="#"><img src="img/_adv1.jpg" width="100%" alt=""></a>
+		</div>
+
+		<div class="block-adv">
+			<a href="#"><img src="img/_adv2.jpg" width="100%" alt=""></a>
+		</div>
+
+		<div class="adv">
+			<a href="#"><img src="img/_adv3.jpg" width="100%" alt=""></a>
+		</div>
+		
+	</div>
+
+
+
+</div>
+<!-- end right column -->
+</div>
+</div>
+
+
+
+
+
+//= layout/_footer.html
+
+
+
+
+
+//= layout/_modal.html
+
+
+
+
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+
+
+
+
+
+</body>
+</html>
+
+
+

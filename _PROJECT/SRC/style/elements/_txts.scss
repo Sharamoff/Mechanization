@@ -1,0 +1,52 @@
+///////////////////////////////////////////////
+// оформление текстов
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+
+
+.txt {
+  font-size: $font-size-basemax;
+  font-family: $font-family-base;
+  @include clearfix;
+
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-base;
+  }
+
+}
+
+.txt__date {
+  font-family: $font-family-narrow;
+  font-size: $font-size-hdr;
+  font-weight: bold;
+  color: $c-red;
+}
+
+.txt__address {
+
+  &:before {
+    font-family: $fontawesome;
+    font-style: normal;
+    font-weight: bold;
+    color: $c-orange-dark;
+    content: "\f3c5";
+    margin-right: 0.8rem;
+  }
+
+}
+
+.txt__linklist {
+  list-style: none;
+  padding-left: 0;
+
+  > li span {
+    display: inline-block;
+    min-width: 10rem;
+    color: $c-gray-light;
+  }
+
+}

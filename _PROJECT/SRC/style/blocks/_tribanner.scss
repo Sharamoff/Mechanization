@@ -1,0 +1,69 @@
+.sc_pg-tribanner {
+  margin-top: 3rem;
+}
+
+.block-tribanner {
+  background: $c-gray-lighter;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: $border-radius;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tribanner__hdr {
+  display: inline-block;
+  font: $font-hdr;
+  font-weight: bold;
+  margin: 1rem 1.5rem;
+  color: $c-black;
+  text-decoration: none;
+}
+
+.tribanner__descript {
+  position: relative;
+  cursor: pointer;
+}
+
+.tribanner__pic {
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0 0 $border-radius $border-radius;
+  }
+
+}
+
+.tribanner__note {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: transparentize($c-black, 0.5);
+  font-size: $font-size-base;
+  line-height: 1.2;
+  color: $c-white;
+  border-radius: 0 0 $border-radius $border-radius;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  a {
+    color: $c-white;
+
+    &:hover {
+      color: $color-link-hover;
+    }
+
+  }
+
+}

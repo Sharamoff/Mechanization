@@ -1,0 +1,252 @@
+.block-tools {
+  margin-bottom: 30px;
+
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 15px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-family: $font-family-narrow;
+    font-size: $font-size-basemax !important;
+  }
+
+  .btn {
+    border-radius: $border-radius;
+  }
+
+  .btn-group {
+
+    .btn {
+      font-size: $font-size-basemax;
+      font-family: $font-family-narrow;
+      margin-bottom: 0 !important;
+      padding: 0.8rem 1.5rem 0.6rem 1.5rem;
+      border: solid 1px #cccccc;
+      background: $c-gray-lightermore;
+
+      &:hover {
+        color: $color-link-hover;
+        background: $c-white;
+      }
+
+    }
+
+    .btn-check:checked + .btn {
+      background: $c-gray;
+      border-color: $c-gray;
+      color: $c-white;
+    }
+
+    .btn-check:focus + .btn {
+      box-shadow: none;
+    }
+
+  }
+
+  &.tools--min {
+
+    margin-bottom: 5px;
+
+    .tools__body {
+      padding-top: 0.7rem;
+      padding-bottom: 0.7rem;
+    }
+
+  }
+
+}
+
+.tools__header {
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: $border-radius;
+  background: #cccccc;
+  color: $color-link;
+  padding: 0.8rem 3rem 0.8rem 1.5rem;
+  font-family: $font-family-narrow;
+  font-size: $font-size-basemax;
+  font-weight: bold;
+  margin-bottom: -4px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #b5b5b5;
+  }
+
+}
+
+.tools__body {
+  border-radius: $border-radius;
+  background: $c-gray-lighter;
+  padding: 1.5rem 1.5rem 1.5rem 3rem;
+  font-family: $font-family-narrow;
+  font-size: $font-size-base;
+  position: relative;
+
+  @include media-breakpoint-down(lg) {
+    padding-left: 1.5rem;
+  }
+
+  &.t--simple {
+    padding-bottom: 0;
+    margin-top: 2rem;
+
+    @include media-breakpoint-down(md) {
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+
+  }
+
+  &.t--flex {
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(md) {
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+
+  }
+
+  h3 {
+    font-family: $font-family-narrow;
+  }
+
+  .tools-panel {
+
+    .row {
+
+      > [class*="col"] {
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+      }
+
+    }
+
+  }
+
+  .tools-subpanel {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: solid 1px #bbbbbb;
+  }
+
+}
+
+
+
+.block-swfilter {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 ;
+  list-style: none;
+  overflow: hidden;
+
+  > li {
+    display: inline-block;
+    position: relative;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+    background: $c-gray-lighter;
+    font-family: $font-family-narrow;
+    font-size: $font-size-basemax;
+    line-height: $line-height-min;
+    color: $c-black;
+    border-radius: 3rem;
+    margin: 0 10px 0 0;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-link-hover;
+    }
+
+    .bl {
+      background: $c-gray-lightermore;
+      margin-right: -0.6rem;
+      margin-bottom: 0;
+    }
+
+  }
+
+  .active a {
+    background: $c-gray;
+    color: $c-white;
+    text-decoration: none;
+
+    .bl {
+      color: $c-black;
+      font-weight: normal;
+    }
+
+  }
+
+}
+
+
+
+.block-swmodel {
+  margin-bottom: 3rem;
+
+  .swmodel-panel {
+
+    ul {
+      list-style: none;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 0;
+
+      > li {
+        border-bottom: dotted 1px #cccccc;
+        margin: 0;
+        padding: 0;
+
+        a {
+          display: flex;
+          align-items: flex-end;
+          padding: 12px 0 0 0;
+          font: $font-narrow;
+          text-decoration: none;
+
+          &:hover {
+
+            .bl {
+              color: $c-black;
+            }
+
+          }
+
+        }
+
+        &.active {
+
+          a {
+            font-weight: bold;
+            color: $c-black;
+            font-size: 1.8rem;
+          }
+
+        }
+
+      }
+
+      .bl {
+        margin-left: auto;
+        background: $c-gray-lighter;
+        font-weight: normal;
+      }
+
+    }
+
+  }
+
+}

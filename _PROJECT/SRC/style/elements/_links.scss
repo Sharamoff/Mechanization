@@ -1,0 +1,28 @@
+///////////////////////////////////////////////
+// ссылки
+
+A {
+	color: $color-link;
+	transition: 0.3s;
+	text-decoration-color: #999999;
+
+	&:hover {
+		color: $color-link-hover;
+		text-decoration: none;
+	}
+
+}
+
+A[href^="tel"] {
+	text-decoration: none !important;
+	white-space: nowrap;
+}
+
+*:focus {
+	outline: none !important;
+	text-decoration: none !important;
+	//color: inherit;
+	box-shadow: none !important;
+}
+
+

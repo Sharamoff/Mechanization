@@ -1,0 +1,21 @@
+.top-adv {
+  display: block;
+  height: $top-adv-height;
+  position: relative;
+  z-index: 1001;
+  text-align: center;
+  background: $c-gray-light;
+
+  &.active {
+    display: none;
+  }
+
+}
+
+
+
+.block-adv {
+  margin-bottom: 30px;
+  border-radius: $border-radius;
+  text-align: center;
+}

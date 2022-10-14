@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+
+// пустышки рефера для отладки
+@import 'vendor/bootstrap/functions';
+@import 'vendor/bootstrap/variables';
+@import 'vendor/bootstrap/mixins';
+
+
+/* main */
+
+
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/grid';
+
+@import 'layout/header';
+@import 'layout/mainmenu';
+@import 'layout/sections';
+@import 'layout/footer';
+@import 'layout/modal';
+
+@import 'elements/elements';
+@import 'elements/txts';
+@import 'elements/headers';
+@import 'elements/buttons';
+@import 'elements/links';
+@import 'elements/forms';
+@import 'elements/sliders';
+@import 'elements/lists';
+@import 'elements/tables';
+@import 'elements/ratings';
+@import 'elements/select';
+@import 'elements/maps';
+
+@import 'blocks/typeeq';
+@import 'blocks/collage';
+@import 'blocks/category';
+@import 'blocks/catalog';
+@import 'blocks/calendar';
+@import 'blocks/company';
+@import 'blocks/about';
+@import 'blocks/news';
+@import 'blocks/adv';
+@import 'blocks/tools';
+@import 'blocks/user';
+@import 'blocks/equipment';
+@import 'blocks/item';
+@import 'blocks/poll';
+@import 'blocks/complectation';
+@import 'blocks/result';
+@import 'blocks/notice';
+@import 'blocks/response';
+@import 'blocks/tribanner';
+@import 'blocks/photo';
+@import 'blocks/cab';
+@import 'blocks/edit';

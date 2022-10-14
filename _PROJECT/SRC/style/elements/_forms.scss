@@ -1,0 +1,136 @@
+///////////////////////////////////////////////
+// формы
+
+FORM {
+
+	select:focus,
+	input:focus {
+		outline: 1px dotted $c-gray !important;
+		outline-offset: -3px;
+		border-color: $color-border;
+	}
+
+	label {
+		color: $c-gray-light;
+		font-size: $font-size-base;
+		font-family: $font-family-narrow;
+		cursor: pointer;
+		line-height: $line-height-min !important;
+		margin-bottom: 0.2rem !important;
+		user-select: none;
+
+		&.required:before {
+			position: relative;
+			top: -0.2rem;
+			margin-right: 0.5rem;
+			content: '\f069';
+			color: $c-red;
+			font-family: $fontawesome;
+			font-size: 1rem;
+			font-weight: bold;
+			line-height: 1;
+		}
+
+	}
+
+	@include placeholder {
+		color: $color-placeholder;
+	}
+
+	SELECT {
+		cursor: pointer;
+	}
+
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.form-control {
+	font-size: $font-size-base;
+}
+
+.form-select {
+	font-size: $font-size-base;
+	padding-right: 3rem;
+}
+
+.form-check {
+	margin-bottom: 0.5rem;
+	padding-top: 0.2rem;
+
+	label {
+		font-size: $font-size-basemax;
+		color: $c-black;
+		transition: 0.2s;
+
+		@include media-breakpoint-down(lg) {
+			font-size: $font-size-base;
+		}
+
+	}
+
+	&:hover {
+
+		label {
+			color: $color-link-hover;
+		}
+
+	}
+
+	.form-check-input {
+		margin-top: 0;
+		margin-left: -1.3em;
+	}
+
+}
+
+.form-check-inline {
+	margin-right: 3rem;
+	margin-left: 0;
+
+	@include media-breakpoint-down(md) {
+		margin-right: 1.5rem;
+	}
+
+}
+
+.col-form-label {
+	margin-top: 0.3rem;
+}
+
+
+.form-note {
+	font-size: $font-size-base;
+	color: $c-gray-light;
+	margin-top: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

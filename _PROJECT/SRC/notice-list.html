@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<title>Механизация.ру</title>
+
+	<link href="css/vendor.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/addit.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+
+
+//= layout/_header.html
+
+
+
+
+
+//= layout/_mainmenu.html
+
+
+
+
+
+<nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+		<li class="breadcrumb-item"><a href="index.html">Доска объявлений</a></li>
+		<li class="breadcrumb-item active" aria-current="page">Машины и механизмы</li>
+	</ol>
+</nav>
+
+
+
+
+
+<div class="wrap wrap--twocolumn">
+<div class="row">
+<!-- left column -->
+<div class="col-lg-9 wrap__col-left">
+
+
+
+	<h1>Доска объявлений Машины и механизмы</h1>
+
+
+
+	<section class="pagecontent sc_pg-noticelist-filter">
+
+
+		<ul class="block-swfilter">
+			<li class="active"><a href="#">Все Машины и механизмы<span class="bl">9658</span></a></li>
+			<li><a href="#">Аренда<span class="bl">359</span></a></li>
+			<li><a href="#">Продажа<span class="bl">2491</span></a></li>
+			<li><a href="#">Запчасти<span class="bl">4395</span></a></li>
+			<li><a href="#">Дополнительное оборудование и аксессуары<span class="bl">24</span></a></li>
+			<li><a href="#">Оснастка и расходные материалы <span class="bl">81</span></a></li>
+			<li><a href="#">Шины<span class="bl">1443</span></a></li>
+		</ul>
+
+
+		<form class="block-tools">
+			<div class="tools__body">
+
+				<div class="tools-panel">
+					<div class="row">
+						<div class="col">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="fld_type" id="fld_type1" value="1" checked>
+								<label class="form-check-label" for="fld_type1">Все</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="fld_type" id="fld_type2" value="2">
+								<label class="form-check-label" for="fld_type2">Новые</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="fld_type" id="fld_type3" value="3">
+								<label class="form-check-label" for="fld_type3">С пробегом</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<select class="selectpicker form-control" multiple data-selected-text-format="count > 3" data-actions-box="true" title="Марка">
+								<optgroup label="Популярные марки">
+									<option>JCB</option>
+									<option>Kato</option>
+									<option>Samsung</option>
+								</optgroup>
+								<optgroup label="Все марки">
+									<option>Amphibex</option>
+									<option>Doosan</option>
+									<option>JCB</option>
+									<option>Tisovec</option>
+									<option>КЭЗ</option>
+									<option>AmphiMaster</option>
+									<option>Gradall</option>
+									<option>Kato</option>
+									<option>Samsung</option>
+									<option>Trencor</option>
+									<option>ЧЕТРА</option>
+								</optgroup>
+							</select>
+						</div>
+						<div class="col-sm-6">
+							<select class="selectpicker form-control" title="Модель">
+								<option value="0" title="Модель">Любая модель</option>
+								<optgroup label="Популярные модели">
+									<option>Novus</option>
+								</optgroup>
+								<optgroup label="Все модели">
+									<option>Novus</option>
+									<option>Primus</option>
+									<option>Ultra Novus</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-3">
+							<select class="selectpicker form-control" title="Тоннаж">
+								<option value="0" title="Тоннаж">Любой тоннаж</option>
+								<option>до 3,5 тонн</option>
+								<option>от 3,5 до 12 тонн</option>
+								<option>свыше 12 тонн</option>
+							</select>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="input-group">
+								<input type="number" class="form-control" placeholder="Цена от, руб" min="0" title="Цена от, руб">
+								<input type="number" class="form-control" placeholder="Цена до, руб" min="0" title="Цена до, руб">
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<select class="selectpicker form-control" multiple data-selected-text-format="count > 3" data-actions-box="true" title="Тип кузова">
+								<option>Автовоз</option>
+								<option>Автотопливозаправщик</option>
+								<option>Автоцистерна</option>
+								<option>Бортовой грузовик</option>
+								<option>Бортовой с КМУ</option>
+								<option>Вакуумная машина</option>
+								<option>Вахтовый автобус</option>
+								<option>Газовоз</option>
+								<option>Для перевозки скота</option>
+								<option>Изотермический фургон</option>
+								<option>Кемпер</option>
+								<option>Контейнеровоз</option>
+								<option>КУНГ</option>
+								<option>Лесовоз</option>
+								<option>Ломовоз/металловоз</option>
+								<option>Плетевоз</option>
+								<option>Рефрижератор</option>
+								<option>Рыбовоз</option>
+								<option>Самосвал</option>
+								<option>Самосвал с 2-х разгрузкой</option>
+								<option>Самосвал с 3-х разгрузкой</option>
+								<option>Сортиментовоз</option>
+								<option>Тент</option>
+								<option>Термокузов</option>
+								<option>Трубовоз</option>
+								<option>Фургон</option>
+								<option>Цементовоз</option>
+								<option>Шасси</option>
+								<option>Эвакуатор</option>
+							</select>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<select class="selectpicker form-control" multiple data-selected-text-format="count > 3" data-actions-box="true" title="Тип кабины">
+								<option>2-х местная без спального</option>
+								<option>2-х местная с 1 спальным</option>
+								<option>2-х местная с 2 спальными</option>
+								<option>3-х местная без спального</option>
+								<option>3-х местная с 1 спальным</option>
+								<option>6-ти местная, двухрядная</option>
+								<option>7-и местная, двухрядная</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-3">
+							<select class="selectpicker form-control" multiple data-selected-text-format="count > 3" data-actions-box="true" title="Двигатель">
+								<option>Бензин</option>
+								<option>Дизель</option>
+								<option>Электро</option>
+								<option>Гибрид</option>
+								<option>Дизель+газ</option>
+								<option>Бензин-газ</option>
+								<option>Газ</option>
+							</select>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<select class="selectpicker form-control" multiple data-selected-text-format="count > 3" data-actions-box="true" title="Коробка">
+								<option>Автоматическая</option>
+								<option>Ручная</option>
+								<option>Полуавтомат</option>
+							</select>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="input-group">
+								<select class="selectpicker form-control" title="Год от">
+									<option value="0" title="Год от">Любой год</option>
+									<option>2001</option>
+									<option>2002</option>
+									<option>2003</option>
+									<option>2004</option>
+								</select>
+								<select class="selectpicker form-control" title="Год до">
+									<option value="0" title="Год до">Любой год</option>
+									<option>2001</option>
+									<option>2002</option>
+									<option>2003</option>
+									<option>2004</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<select class="selectpicker form-control" multiple data-selected-text-format="count > 3" data-actions-box="true" title="Шасси">
+								<option>Рессора-Ррессора</option>
+								<option>Рессора-Пневмо</option>
+								<option>Пневмо-Пневмо</option>
+							</select>
+						</div>
+					</div>
+					<hr>
+				</div>
+
+				<div class="tools-panel collapse" id="id_tools-all">
+					<div class="tools-subpanel">
+						<h3>Комфорт</h3>
+						<div class="row">
+							<div class="col-sm-6 col-md-3">
+								<select class="selectpicker form-control" multiple data-selected-text-format="count > 3" data-actions-box="true" title="Климат">
+									<option>Климат-контроль</option>
+									<option>Передний</option>
+									<option>Задний</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="checkbox" name="fld_cruize" id="fld_cruize">
+									<label class="form-check-label" for="fld_cruize">Круиз-контроль</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="checkbox" name="fld_comp" id="fld_comp">
+									<label class="form-check-label" for="fld_comp">Бортовой компьютер</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="checkbox" name="fld_fridge" id="fld_fridge">
+									<label class="form-check-label" for="fld_fridge">Холодильник</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="checkbox" name="fld_heater" id="fld_heater">
+									<label class="form-check-label" for="fld_heater">Автономный отопитель салона</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tools-subpanel">
+						<h3>Мультимедиа</h3>
+						<div class="row">
+							<div class="col">
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="checkbox" name="fld_nav" id="fld_nav">
+									<label class="form-check-label" for="fld_nav">Навигационная система</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tools-subpanel">
+						<h3>Салон</h3>
+						<div class="row">
+							<div class="col-sm-6 col-md-3">
+								<select class="selectpicker form-control" multiple data-selected-text-format="count > 3" data-actions-box="true" title="Подогрев сидений">
+									<option>Подогрев сидений</option>
+									<option>Передний</option>
+									<option>Задний</option>
+								</select>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<select class="selectpicker form-control" multiple data-selected-text-format="count > 3" data-actions-box="true" title="Электроподъемники">
+									<option>Электроподъемники</option>
+									<option>Передний</option>
+									<option>Задний</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a href="" class="b-more" data-bs-toggle="collapse" data-bs-target="#id_tools-all" aria-expanded="true" aria-controls="id_tools-all"><div class="i--swdown">параметры Машины и механизмы</div></a>
+
+			</div>
+		</form>
+
+
+		<div class="block-swmodel">
+
+			<div class="swmodel-panel">
+				<div class="row">
+					<div class="col-lg-4">
+						<ul>
+							<li class="active"><a href="#">Все марки Машины и механизмы<span class="bl">4360</span></a></li>
+							<li><a href="#">Amphibex<span class="bl">12</span></a></li>
+							<li><a href="#">Doosan<span class="bl">2</span></a></li>
+							<li><a href="#">JCB<span class="bl">3</span></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4">
+						<ul>
+							<li><a href="#">Tisovec<span class="bl">43</span></a></li>
+							<li><a href="#">КЭЗ<span class="bl">2</span></a></li>
+							<li><a href="#">AmphiMaster<span class="bl">4</span></a></li>
+							<li><a href="#">Gradall<span class="bl">3</span></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4">
+						<ul>
+							<li><a href="#">Kato<span class="bl">4</span></a></li>
+							<li><a href="#">Samsung<span class="bl">2</span></a></li>
+							<li><a href="#">Trencor<span class="bl">2</span></a></li>
+							<li><a href="#">ЧЕТРА<span class="bl">4</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="swmodel-panel collapse" id="id_swmodel-all">
+				<div class="row">
+					<div class="col-lg-4">
+						<ul>
+							<li><a href="#">Bobcat<span class="bl">4</span></a></li>
+							<li><a href="#">Hidromek<span class="bl">2</span></a></li>
+							<li><a href="#">Komatsu<span class="bl">3</span></a></li>
+							<li><a href="#">SDLG<span class="bl">2</span></a></li>
+							<li><a href="#">Manitowoc<span class="bl">2</span></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4">
+						<ul>
+							<li><a href="#">Vermeer<span class="bl">432</span></a></li>
+							<li><a href="#">CAT<span class="bl">3</span></a></li>
+							<li><a href="#">Hitachi<span class="bl">4</span></a></li>
+							<li><a href="#">Liebherr<span class="bl">3</span></a></li>
+							<li><a href="#">Terex<span class="bl">3</span></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4">
+						<ul>
+							<li><a href="#">Shantui<span class="bl">3</span></a></li>
+							<li><a href="#">Volvo<span class="bl">4</span></a></li>
+							<li><a href="#">Ditch Witch<span class="bl">4</span></a></li>
+							<li><a href="#">Hyundai<span class="bl">3</span></a></li>
+							<li><a href="#">Waterking<span class="bl">4</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<a href="" class="b-more" data-bs-toggle="collapse" data-bs-target="#id_swmodel-all" aria-expanded="true" aria-controls="id_swmodel-all"><div class="i--swdown">марки Машины и механизмы</div></a>
+
+		</div>
+
+
+		<form class="block-tools tools--min">
+			<div class="tools__body">
+				<div class="tools-panel">
+					<div class="row">
+						<div class="col-md-7 col-12">
+							<div class="btn-group" role="group" title="Тип объявления">
+								<input class="btn-check" type="radio" name="fld_listtype" id="fld_listtype1" autocomplete="off" checked>
+								<label class="btn" for="fld_listtype1">Все</label>
+								<input class="btn-check" type="radio" name="fld_listtype" id="fld_listtype2" autocomplete="off">
+								<label class="btn" for="fld_listtype2">Спрос</label>
+								<input class="btn-check" type="radio" name="fld_listtype" id="fld_listtype3" autocomplete="off">
+								<label class="btn" for="fld_listtype3">Предложение</label>
+							</div>
+						</div>
+						<div class="col-md-2 col-5">
+							<select class="form-select" title="Сортировка">
+								<option>Сортировка</option>
+								<option>По возрастанию</option>
+								<option>По убыванию</option>
+							</select>
+						</div>
+						<div class="col-md-3 col-7">
+							<select class="form-select" title="">
+								<option>По удаленности</option>
+								<option>По дате размещения</option>
+								<option>Дешевле</option>
+								<option>Дороже</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+
+
+	</section>
+
+
+
+	<section class="pagecontent sc_pg-noticelist">
+
+
+		<div class="panel panel--shadow block-noticelist">
+			<a href="#" class="b-tofav" title="Добавить объявление в избранное"></a>
+			<div class="row">
+				<div class="col-md-9 noticelist" onclick='javascript:document.location.href = "#"'>
+					<div class="noticelist__pics slidepics" id="id_noticelist1">
+						<div class="pics_hoverbar">
+							<div class="hoverbar1"></div>
+							<div class="hoverbar2"></div>
+							<div class="hoverbar3"></div>
+						</div>
+						<div class="pics_slide">
+							<img src="img/items/3179_320x240.jpg" alt="">
+							<img src="img/items/3197_320x240.jpg" alt="">
+							<img src="img/items/3200_320x240.jpg" alt="">
+						</div>
+					</div>
+					<div class="noticelist__descript">
+							<div class="descript_title"><span class="notice-premium" title="Объявление оплачено"></span>Аренда автокрана 16 тонн 21.7 метр</div>
+							<div class="descript_note">Автокран на шасси КАМАЗ, грузоподъемностью 16т., вылет стрелы 21,7м. 1600 руб/час. 4 часа min.</div>
+							<div class="descript_price rub">5 000</div>
+							<div class="descript_infos">
+								<div class="i-info">новый</div>
+								<div class="i-info c--red">на заказ</div>
+							</div>
+							<div class="noticelist_date"><span class="noticelist_type">Предложение&nbsp;</span>размещено 06.06.2022 07:42</div>
+						</div>
+				</div>
+				<div class="col-md-3">
+					<div class="noticelist__company">
+						<a href="#" class="company_name">ООО «НАК Машинери»</a>
+						<div class="company_address">г. Новосибирск, Новосибирская область, Россия (212 км от г. Ленинск-Кузнецкий)</div>
+						<div class="company_infos">3 завершенных объявления на сайте с августа 2021</div>
+						<div class="company_btns">
+							<div class="b_phoneview" id="id_phoneview1">
+								<span>Показать телефон</span>
+								<a href="tel:+74955555555">+7 495 555-55-55</a>
+							</div>
+							<div class="b_noteview" data-bs-toggle="modal" data-bs-target="#id_modal-note">Написать</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel--shadow block-noticelist">
+			<a href="#" class="b-tofav" title="Добавить объявление в избранное"></a>
+			<div class="row">
+				<div class="col-md-9 noticelist" onclick='javascript:document.location.href = "#"'>
+					<div class="noticelist__pics slidepics" id="id_noticelist2">
+						<div class="pics_slide">
+							<img src="img/items/_nofoto_320x240.png" alt="">
+						</div>
+					</div>
+					<div class="noticelist__descript">
+						<div class="descript_title">Бульдозеры Четра Т-11, Т-20 и Т-35 гарантия 12 мес</div>
+						<div class="descript_note">Ищем на короткий срок бульдозеры Четра Т-11.01 и т-20.01 в после капитального ремонта.</div>
+						<div class="descript_price rub">3 500 000</div>
+						<div class="descript_infos">
+							<div class="i-info">б/у</div>
+						</div>
+						<div class="noticelist_date"><span class="noticelist_type">Спрос&nbsp;</span>размещен 06.06.2022 06:15</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="noticelist__company">
+						<a href="#" class="company_name">Частное лицо</a>
+						<div class="company_address">г. Кемерово, Кемеровская область, Россия</div>
+						<div class="company_infos"></div>
+						<div class="company_btns">
+							<div class="b_phoneview" id="id_phoneview2">
+								<span>Показать телефон</span>
+								<a href="tel:+74955555555">+7 495 555-55-55</a>
+							</div>
+							<div class="b_noteview" data-bs-toggle="modal" data-bs-target="#id_modal-note">Написать</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel--shadow block-noticelist">
+			<a href="#" class="b-tofav" title="Добавить объявление в избранное"></a>
+			<div class="row">
+				<div class="col-md-9 noticelist" onclick='javascript:document.location.href = "#"'>
+					<div class="noticelist__pics slidepics" id="id_noticelist3">
+						<div class="pics_hoverbar">
+							<div class="hoverbar1"></div>
+							<div class="hoverbar2"></div>
+						</div>
+						<div class="pics_slide">
+							<img src="img/items/3197_320x240.jpg" alt="">
+							<img src="img/items/3200_320x240.jpg" alt="">
+						</div>
+					</div>
+					<div class="noticelist__descript">
+						<div class="descript_title">7T0682 9w9734 6t9537 9w5776 Запчасти Cat D10 DCF</div>
+						<div class="descript_note">Со склада в Санкт Петербурге Москве или Хабаровске по наличию запчасти премиум класса DCF.</div>
+						<div class="descript_price">По запросу</div>
+						<div class="noticelist_date"><span class="noticelist_type">Предложение&nbsp;</span>размещено 12.05.2022 21:22</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="noticelist__company">
+						<a href="#" class="company_name">Частное лицо</a>
+						<div class="company_address">г. Кемерово, Кемеровская область, Россия (78 км от г. Ленинск-Кузнецкий)</div>
+						<div class="company_infos">1 завершенное объявление на сайте с января 2021</div>
+						<div class="company_btns">
+							<div class="b_phoneview" id="id_phoneview3">
+								<span>Показать телефон</span>
+								<a href="tel:+74955555555">+7 495 555-55-55</a>
+							</div>
+							<div class="b_noteview" data-bs-toggle="modal" data-bs-target="#id_modal-note">Написать</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel--shadow block-noticelist">
+			<a href="#" class="b-tofav" title="Добавить объявление в избранное"></a>
+			<div class="row">
+				<div class="col-md-9 noticelist" onclick='javascript:document.location.href = "#"'>
+					<div class="noticelist__pics slidepics" id="id_noticelist4">
+						<div class="pics_hoverbar">
+							<div class="hoverbar1"></div>
+							<div class="hoverbar2"></div>
+							<div class="hoverbar3"></div>
+							<div class="hoverbar4"></div>
+						</div>
+						<div class="pics_slide">
+							<img src="img/items/3179_320x240.jpg" alt="">
+							<img src="img/items/3197_320x240.jpg" alt="">
+							<img src="img/items/3200_320x240.jpg" alt="">
+							<img src="img/items/3197_320x240.jpg" alt="">
+						</div>
+					</div>
+					<div class="noticelist__descript">
+						<div class="descript_title"><span class="notice-premium" title="Объявление оплачено"></span>Бульдозер для полигона ТБО новый от завода</div>
+						<div class="descript_note">Челябинский Завод Промышленных Тракторов . Производство, продажа, сервисное и гарантийное обслуживание спецтехники! </div>
+						<div class="descript_price rub">6 200 000</div>
+						<div class="descript_infos">
+							<div class="i-info">новый</div>
+						</div>
+						<div class="noticelist_date"><span class="noticelist_type">Предложение&nbsp;</span>размещено 06.06.2022 07:42</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="noticelist__company">
+						<a href="#" class="company_name">Челябинский Завод Промышленных Тракторов</a>
+						<div class="company_address">г. Кемерово, Кемеровская область, Россия (78 км от г. Ленинск-Кузнецкий)</div>
+						<div class="company_infos">2 завершенных объявления на сайте с апреля 2022</div>
+						<div class="company_btns">
+							<div class="b_phoneview" id="id_phoneview4">
+								<span>Показать телефон</span>
+								<a href="tel:+74955555555">+7 495 555-55-55</a>
+							</div>
+							<div class="b_noteview" data-bs-toggle="modal" data-bs-target="#id_modal-note">Написать</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel--shadow block-noticelist">
+			<a href="#" class="b-tofav" title="Добавить объявление в избранное"></a>
+			<div class="row">
+				<div class="col-md-9 noticelist" onclick='javascript:document.location.href = "#"'>
+					<div class="noticelist__pics slidepics" id="id_noticelist5">
+						<div class="pics_slide">
+							<img src="img/items/3197_320x240.jpg" alt="">
+						</div>
+					</div>
+					<div class="noticelist__descript">
+						<div class="descript_title"><span class="notice-premium" title="Объявление оплачено"></span>Аренда автокрана 16 тонн 21.7 метр</div>
+						<div class="descript_note">Автокран на шасси КАМАЗ, грузоподъемностью 16т., вылет стрелы 21,7м. 1600 руб/час. 4 часа min.</div>
+						<div class="descript_price rub">5 000</div>
+						<div class="descript_infos">
+							<div class="i-info">новый</div>
+							<div class="i-info c--red">на заказ</div>
+						</div>
+						<div class="noticelist_date"><span class="noticelist_type">Предложение&nbsp;</span>размещено 06.06.2022 07:42</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="noticelist__company">
+						<a href="#" class="company_name">ООО «НАК Машинери»</a>
+						<div class="company_address">г. Новосибирск, Новосибирская область, Россия (212 км от г. Ленинск-Кузнецкий)</div>
+						<div class="company_infos">3 завершенных объявления на сайте с августа 2021</div>
+						<div class="company_btns">
+							<div class="b_phoneview" id="id_phoneview5">
+								<span>Показать телефон</span>
+								<a href="tel:+74955555555">+7 495 555-55-55</a>
+							</div>
+							<div class="b_noteview" data-bs-toggle="modal" data-bs-target="#id_modal-note">Написать</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel--shadow block-noticelist">
+			<a href="#" class="b-tofav" title="Добавить объявление в избранное"></a>
+			<div class="row">
+				<div class="col-md-9 noticelist" onclick='javascript:document.location.href = "#"'>
+					<div class="noticelist__pics slidepics" id="id_noticelist6">
+						<div class="pics_slide">
+							<img src="img/items/_nofoto_320x240.png" alt="">
+						</div>
+					</div>
+					<div class="noticelist__descript">
+						<div class="descript_title">Бульдозеры Четра Т-11, Т-20 и Т-35 гарантия 12 мес</div>
+						<div class="descript_note">Ищем на короткий срок бульдозеры Четра Т-11.01 и т-20.01 в после капитального ремонта.</div>
+						<div class="descript_price rub">3 500 000</div>
+						<div class="descript_infos">
+							<div class="i-info">б/у</div>
+						</div>
+						<div class="noticelist_date"><span class="noticelist_type">Спрос&nbsp;</span>размещен 06.06.2022 06:15</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="noticelist__company">
+						<a href="#" class="company_name">Частное лицо</a>
+						<div class="company_address">г. Кемерово, Кемеровская область, Россия</div>
+						<div class="company_infos"></div>
+						<div class="company_btns">
+							<div class="b_phoneview" id="id_phoneview6">
+								<span>Показать телефон</span>
+								<a href="tel:+74955555555">+7 495 555-55-55</a>
+							</div>
+							<div class="b_noteview" data-bs-toggle="modal" data-bs-target="#id_modal-note">Написать</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel--shadow block-noticelist">
+			<a href="#" class="b-tofav" title="Добавить объявление в избранное"></a>
+			<div class="row">
+				<div class="col-md-9 noticelist" onclick='javascript:document.location.href = "#"'>
+					<div class="noticelist__pics slidepics" id="id_noticelist7">
+						<div class="pics_hoverbar">
+							<div class="hoverbar1"></div>
+							<div class="hoverbar2"></div>
+						</div>
+						<div class="pics_slide">
+							<img src="img/items/3197_320x240.jpg" alt="">
+							<img src="img/items/3200_320x240.jpg" alt="">
+						</div>
+					</div>
+					<div class="noticelist__descript">
+						<div class="descript_title">7T0682 9w9734 6t9537 9w5776 Запчасти Cat D10 DCF</div>
+						<div class="descript_note">Со склада в Санкт Петербурге Москве или Хабаровске по наличию запчасти премиум класса DCF.</div>
+						<div class="descript_price">По запросу</div>
+						<div class="noticelist_date"><span class="noticelist_type">Предложение&nbsp;</span>размещено 12.05.2022 21:22</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="noticelist__company">
+						<a href="#" class="company_name">Частное лицо</a>
+						<div class="company_address">г. Кемерово, Кемеровская область, Россия (78 км от г. Ленинск-Кузнецкий)</div>
+						<div class="company_infos">1 завершенное объявление на сайте с января 2021</div>
+						<div class="company_btns">
+							<div class="b_phoneview" id="id_phoneview7">
+								<span>Показать телефон</span>
+								<a href="tel:+74955555555">+7 495 555-55-55</a>
+							</div>
+							<div class="b_noteview" data-bs-toggle="modal" data-bs-target="#id_modal-note">Написать</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel--shadow block-noticelist">
+			<a href="#" class="b-tofav" title="Добавить объявление в избранное"></a>
+			<div class="row">
+				<div class="col-md-9 noticelist" onclick='javascript:document.location.href = "#"'>
+					<div class="noticelist__pics slidepics" id="id_noticelist8">
+						<div class="pics_hoverbar">
+							<div class="hoverbar1"></div>
+							<div class="hoverbar2"></div>
+							<div class="hoverbar3"></div>
+							<div class="hoverbar4"></div>
+						</div>
+						<div class="pics_slide">
+							<img src="img/items/3179_320x240.jpg" alt="">
+							<img src="img/items/3197_320x240.jpg" alt="">
+							<img src="img/items/3200_320x240.jpg" alt="">
+							<img src="img/items/3197_320x240.jpg" alt="">
+						</div>
+					</div>
+					<div class="noticelist__descript">
+						<div class="descript_title"><span class="notice-premium" title="Объявление оплачено"></span>Бульдозер для полигона ТБО новый от завода</div>
+						<div class="descript_note">Челябинский Завод Промышленных Тракторов . Производство, продажа, сервисное и гарантийное обслуживание спецтехники! </div>
+						<div class="descript_price rub">6 200 000</div>
+						<div class="descript_infos">
+							<div class="i-info">новый</div>
+						</div>
+						<div class="noticelist_date"><span class="noticelist_type">Предложение&nbsp;</span>размещено 06.06.2022 07:42</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="noticelist__company">
+						<a href="#" class="company_name">Челябинский Завод Промышленных Тракторов</a>
+						<div class="company_address">г. Кемерово, Кемеровская область, Россия (78 км от г. Ленинск-Кузнецкий)</div>
+						<div class="company_infos">2 завершенных объявления на сайте с апреля 2022</div>
+						<div class="company_btns">
+							<div class="b_phoneview" id="id_phoneview8">
+								<span>Показать телефон</span>
+								<a href="tel:+74955555555">+7 495 555-55-55</a>
+							</div>
+							<div class="b_noteview" data-bs-toggle="modal" data-bs-target="#id_modal-note">Написать</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel--shadow block-noticelist">
+			<a href="#" class="b-tofav" title="Добавить объявление в избранное"></a>
+			<div class="row">
+				<div class="col-md-9 noticelist" onclick='javascript:document.location.href = "#"'>
+					<div class="noticelist__pics slidepics" id="id_noticelist9">
+						<div class="pics_slide">
+							<img src="img/items/_nofoto_320x240.png" alt="">
+						</div>
+					</div>
+					<div class="noticelist__descript">
+						<div class="descript_title">Бульдозеры Четра Т-11, Т-20 и Т-35 гарантия 12 мес</div>
+						<div class="descript_note">Ищем на короткий срок бульдозеры Четра Т-11.01 и т-20.01 в после капитального ремонта.</div>
+						<div class="descript_price rub">3 500 000</div>
+						<div class="descript_infos">
+							<div class="i-info">б/у</div>
+						</div>
+						<div class="noticelist_date"><span class="noticelist_type">Спрос&nbsp;</span>размещен 06.06.2022 06:15</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="noticelist__company">
+						<a href="#" class="company_name">Частное лицо</a>
+						<div class="company_address">г. Кемерово, Кемеровская область, Россия</div>
+						<div class="company_infos"></div>
+						<div class="company_btns">
+							<div class="b_phoneview" id="id_phoneview9">
+								<span>Показать телефон</span>
+								<a href="tel:+74955555555">+7 495 555-55-55</a>
+							</div>
+							<div class="b_noteview" data-bs-toggle="modal" data-bs-target="#id_modal-note">Написать</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel--shadow block-noticelist">
+			<a href="#" class="b-tofav" title="Добавить объявление в избранное"></a>
+			<div class="row">
+				<div class="col-md-9 noticelist" onclick='javascript:document.location.href = "#"'>
+					<div class="noticelist__pics slidepics" id="id_noticelist10">
+						<div class="pics_hoverbar">
+							<div class="hoverbar1"></div>
+							<div class="hoverbar2"></div>
+						</div>
+						<div class="pics_slide">
+							<img src="img/items/3197_320x240.jpg" alt="">
+							<img src="img/items/3200_320x240.jpg" alt="">
+						</div>
+					</div>
+					<div class="noticelist__descript">
+						<div class="descript_title">7T0682 9w9734 6t9537 9w5776 Запчасти Cat D10 DCF</div>
+						<div class="descript_note">Со склада в Санкт Петербурге Москве или Хабаровске по наличию запчасти премиум класса DCF.</div>
+						<div class="descript_price">По запросу</div>
+						<div class="noticelist_date"><span class="noticelist_type">Предложение&nbsp;</span>размещено 12.05.2022 21:22</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="noticelist__company">
+						<a href="#" class="company_name">Частное лицо</a>
+						<div class="company_address">г. Кемерово, Кемеровская область, Россия (78 км от г. Ленинск-Кузнецкий)</div>
+						<div class="company_infos">1 завершенное объявление на сайте с января 2021</div>
+						<div class="company_btns">
+							<div class="b_phoneview" id="id_phoneview10">
+								<span>Показать телефон</span>
+								<a href="tel:+74955555555">+7 495 555-55-55</a>
+							</div>
+							<div class="b_noteview" data-bs-toggle="modal" data-bs-target="#id_modal-note">Написать</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<nav>
+			<ul class="pagination justify-content-center">
+				<li class="page-item disabled">
+					<a class="page-link" href="#" tabindex="-1" aria-disabled="true">«</a>
+				</li>
+				<li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item">
+					<a class="page-link" href="#">»</a>
+				</li>
+			</ul>
+		</nav>
+
+
+	</section>
+
+
+
+	<section class="pagecontent sc_pg-tribanner">
+		<div class="row row--stretched">
+
+			<div class="col-sm-4">
+				<div class="block-tribanner" id="id_tribanner1">
+					<a href="#" class="tribanner__hdr">
+						Аренда<br>
+						крана-манипулятора
+					</a>
+					<div class="tribanner__descript">
+						<div class="tribanner__note" style="display:none;">
+							<p>Предоставляем услуги манипулятор КАМАЗ-43118(6х6) выполнит перевозку в условиях бездорожья.</p>
+							<p>Грузоподъемность шасси 10 т.</p>
+							<p><a href="#">Копровые установки</a><br>
+								<a href="#">Трубоукладчики</a></p>
+							<p><a href="#">Контакты</a></p>
+						</div>
+						<div class="tribanner__pic">
+							<img src="img/items/tribanner1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="block-tribanner" id="id_tribanner2">
+					<a href="#" class="tribanner__hdr">
+						Аренда<br>
+						манипулятора-прицепа 15&nbsp;тонн
+					</a>
+					<div class="tribanner__descript">
+						<div class="tribanner__note" style="display:none;">
+							<p>В нашем парке манипуляторы грузоподъемностью от 3 до 20 тонн, шоссейные и вездеходы.</p>
+						</div>
+						<div class="tribanner__pic">
+							<img src="img/items/tribanner1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="block-tribanner" id="id_tribanner3">
+					<a href="#" class="tribanner__hdr">
+						Аренда<br>
+						манипулятора 20&nbsp;тонн полуприцепа
+					</a>
+					<div class="tribanner__descript">
+						<div class="tribanner__note" style="display:none;">
+							<p>Мы гарантируем высокий уровень сервисных услуг по выгодным расценкам.</p>
+							<p>При работе с клиентом мы учитываем все особенности и пожелания.</p>
+							<p>Мы заработали репутацию фирмы, которой можно доверять.</p>
+						</div>
+						<div class="tribanner__pic">
+							<img src="img/items/tribanner1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+
+</div>
+<!-- end left column -->
+<!-- right column -->
+<div class="col-lg-3 hidden-lg-down wrap__col-right col-right--padded-top">
+
+
+
+	<div class="col-adv sticked">
+		
+		<div class="block-adv">
+			<a href="#"><img src="img/_adv1.jpg" width="100%" alt=""></a>
+		</div>
+
+		<div class="block-adv">
+			<a href="#"><img src="img/_adv2.jpg" width="100%" alt=""></a>
+		</div>
+
+		<div class="adv">
+			<a href="#"><img src="img/_adv3.jpg" width="100%" alt=""></a>
+		</div>
+		
+	</div>
+
+
+
+</div>
+<!-- end right column -->
+</div>
+</div>
+
+
+
+
+
+//= layout/_footer.html
+
+
+
+
+
+//= layout/_modal.html
+
+
+
+
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+.mainmenu {
+  position: fixed;
+  top: -300%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  max-height: 90vh;
+  background-color: $c-white;
+  overflow-y: auto;
+  transition: all 0.5s;
+  opacity: 0;
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+  font: $font-narrow;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.35);
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 3rem;
+  }
+
+  &.active {
+    top: 72px;
+    opacity: 1;
+    overflow-y: auto;
+
+    @include media-breakpoint-down(lg) {
+      top: 47px;
+      height: 90vh;
+    }
+
+  }
+
+}
+
+.wrap-mainmenu {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $m-max;
+  width: 100%;
+
+  @include media-breakpoint-down(lg) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
+
+.mainmenu__region {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  cursor: pointer;
+
+  span {
+    color: #999999;
+    white-space: nowrap;
+    margin-right: 1rem;
+  }
+
+  .region_name {
+    display: inline-block;
+    padding: 1rem 3rem 1rem 1rem;
+    background: $c-gray-lightermore url("../img/bk-region.svg") right no-repeat;
+    border-radius: 4px;
+    font-weight: bold;
+    width: 100%;
+
+    i {
+      margin-right: 0.8rem;
+    }
+
+  }
+
+}
+
+.mainmenu__regionplate {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 3rem;
+  left: 30px;
+  right: 30px;
+  bottom: 1.5rem;
+  background: $c-gray-lightermore;
+  border-radius: 4px;
+  overflow-y: auto;
+  padding: 1.5rem 3rem 1.5rem 1.5rem;
+
+  &.active {
+    display: block;
+  }
+
+  @include media-breakpoint-down(lg) {
+    left: 15px;
+    right: 15px;
+    padding: 1.5rem;
+  }
+
+  .regionplate_navs {
+    margin-bottom: 1.5rem;
+
+    .nav-item {
+      color: $c-black;
+      background: $c-gray-lighter;
+      margin: 2px;
+
+      &:hover {
+        background: #cccccc;
+      }
+
+      &.active {
+        color: $c-white;
+        background: $c-gray;
+      }
+
+    }
+
+
+  }
+
+  .fld_regionplate_search {
+    font-family: $font-family-narrow !important;
+    font-size: 1.5rem !important;
+    //padding-top: 0.6rem !important;
+    //padding-bottom: 0.6rem !important;
+  }
+
+  .regionplate_tabs {
+    margin-top: 1.5rem;
+
+    ul {
+      list-style: none;
+      margin-bottom: 3rem;
+      padding-left: 15px;
+
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 2rem;
+      }
+
+      > li {
+        margin-bottom: 1rem;
+      }
+
+    }
+
+  }
+
+}
+
+.mainmenu__search {
+  display: none;
+  height: 36px;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  border: solid 1px $c-gray-lighter;
+  border-radius: 4px;
+
+  @include media-breakpoint-down(lg) {
+    display: flex;
+  }
+
+  .search_fld {
+    height: 36px;
+    border: none;
+    border-radius: 4px 0 0 4px !important;
+    font: $font-narrow;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    background: $c-gray-lighter;
+    margin-right: -25px;
+    transition: all 0.5s;
+    width: 98%;
+  }
+
+  .search_btn {
+    height: 36px;
+    width: 70px;
+    background: transparent url("../img/b-search.svg") right no-repeat;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    padding: 0;
+  }
+
+
+}
+
+.mainmenu__btns {
+
+  button {
+    margin-bottom: 3rem;
+    width: 90%;
+
+    @include media-breakpoint-only(xs) {
+      width: 100%;
+    }
+
+  }
+
+}
+
+.mainmenu__links {
+  list-style: none;
+  margin-bottom: 3.9rem;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 2rem;
+  }
+
+  > li {
+    margin-bottom: 1rem;
+  }
+
+  .bl {
+    width: auto;
+    min-width: 17px;
+    padding-left: 6px;
+    padding-right: 6px;
+    color: $c-black;
+    background-color: $c-orange;
+    margin-left: 0.5rem;
+  }
+
+}
+
+

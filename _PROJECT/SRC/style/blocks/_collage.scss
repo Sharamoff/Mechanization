@@ -1,0 +1,44 @@
+.block-idx_collage {
+  border-radius: $border-radius;
+  position: relative;
+  text-align: center;
+
+  &.collage--l {
+    margin-right: -6px;
+
+    @include media-breakpoint-down(sm) {
+      margin-right: 0;
+    }
+
+  }
+
+  &.collage--r {
+    margin-left: -6px;
+
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+    }
+
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+  }
+
+  button {
+    position: relative;
+    bottom: 22px;
+    width: 70%;
+    height: 44px !important;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+
+  }
+
+}

@@ -1,0 +1,122 @@
+.table-itemcomplectation {
+
+	.tt--compname {
+		width: 100%;
+		color: $c-black;
+		font-weight: bold;
+		padding-top: 1.5rem;
+		border-left: solid 3px #999999;
+		padding-left: 1.5rem;
+
+		@include media-breakpoint-down(md) {
+			margin: 0;
+			padding: 1.5rem 1rem 1rem 0.7rem;
+		}
+
+	}
+
+	.th--complectation,
+	.tt--complectation {
+		width: 60%;
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+		}
+
+	}
+
+	.tt--complectation {
+		padding-left: 3rem;
+
+		@include media-breakpoint-down(md) {
+			padding-left: 1rem;
+		}
+
+	}
+
+
+	.th--period,
+	.tt--period {
+		width: 15%;
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+		}
+
+	}
+
+	.th--mark,
+	.tt--mark {
+		width: 15%;
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+		}
+
+	}
+
+	.th--compare,
+	.tt--compare {
+		width: 10%;
+		text-align: center;
+		white-space: nowrap;
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+			text-align: left;
+
+			.dt-tt {
+				display: inline-block;
+				margin-right: 0.8rem;
+			}
+
+		}
+
+	}
+
+	.tt--compare {
+		margin-top: 0;
+		margin-bottom: 0;
+
+		.form-check-input {
+			width: 1.9rem;
+			height: 1.9rem;
+			margin: 0;
+
+			@include media-breakpoint-down(md) {
+				position: relative;
+				top: 0.6rem;
+				margin-bottom: 1.1rem;
+			}
+
+		}
+
+	}
+
+}
+
+
+.panel--itemcomplectation {
+	margin-bottom: 3rem;
+}
+
+.block-itemcomplectation {
+	margin-bottom: 3rem;
+
+	.row {
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+		border-bottom: dotted 1px #cccccc;
+	}
+
+	.ic-prop {
+		color: $c-gray-light;
+	}
+
+	.ic-val {
+		color: $c-black;
+	}
+
+}

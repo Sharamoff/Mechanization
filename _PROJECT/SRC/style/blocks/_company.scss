@@ -1,0 +1,491 @@
+.block-companylist {
+  display: flex;
+  position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  @include media-breakpoint-down(md) {
+    display: block;
+  }
+
+  .b-tofav {
+    top: 1.5rem;
+  }
+
+  .companylist-l {
+    width: 30%;
+    max-width: 28rem;
+    margin-right: 15px;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      max-width: 267px;
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
+
+  }
+
+  .companylist__logo {
+    display: block;
+    border-radius: $border-radius;
+    border: solid 1px $color-border;
+    max-width: 267px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: $border-radius;
+    }
+
+  }
+
+  .companylist-r {
+    width: 70%;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+
+  }
+
+  .companylist__descript {
+    line-height: $line-height-min;
+
+    .descript_name {
+      display: inline-block;
+      font-size: $font-size-hdr;
+      font-weight: bold;
+      font-family: $font-family-narrow;
+      text-decoration: none;
+      margin-right: 26rem;
+
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+      }
+
+    }
+
+    .descript_types {
+      font-family: $font-family-narrow;
+      margin-top: 1rem;
+
+      > span {
+        margin-right: 0.6rem;
+
+        &:after {
+          font-family: $font-family-base !important;
+          font-weight: bold;
+          font-size: 13px;
+          color: $c-gray-light;
+          content: "•";
+          margin-left: 0.8rem;
+        }
+
+        &:last-child:after {
+          display: none;
+        }
+
+      }
+
+    }
+
+    .descript_rating {
+      position: absolute;
+      top: 1.6rem;
+      right: 6rem;
+      display: flex;
+      align-items: center;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 1rem;
+        position: static;
+      }
+
+      .rating {
+        font-weight: bold;
+      }
+
+    }
+
+    .descript_contact {
+      margin-top: 1.5rem;
+    }
+
+    .contact_item {
+      margin-left: 2.5rem;
+
+      &:before {
+        display: inline-block;
+        width: 2.5rem;
+        margin-left: -2.5rem;
+        font-family: $fontawesome;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        color: $c-orange-dark;
+      }
+
+    }
+
+    .contact_address {
+      margin-bottom: 0.8rem;
+
+      &:before {content: "\f3c5";}
+
+    }
+
+    .contact_tel {
+      margin-bottom: 0.5rem;
+
+      &:before {content: "\f879";}
+
+    }
+
+    .contact_web {
+      margin-bottom: 0.5rem;
+
+      &:before {content: "\f0ac";}
+
+    }
+
+  }
+
+  .companylist__infos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+}
+
+
+
+.block-companycollage {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  background: $c-gray-lighter;
+  height: 300px;
+  overflow: hidden;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+
+  @include media-breakpoint-down(sm) {
+    height: 150px;
+  }
+
+  .companycollage_title {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    top: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-family-narrow;
+    font-weight: bold;
+    font-size: 5rem;
+    color: $c-white;
+    line-height: $line-height-min;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 2.5rem;
+    }
+
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    position: relative;
+    z-index: 3;
+  }
+
+  .b-inputphoto {
+    position: absolute;
+    z-index: 5;
+    bottom: 1.5rem;
+    right: 1.5rem;
+ }
+
+}
+
+
+
+.block-company {
+  display: flex;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  @include media-breakpoint-down(md) {
+    display: block;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .b-tofav {
+    top: 3rem;
+
+    @include media-breakpoint-down(md) {
+      top: 1rem;
+      right: 1rem;
+    }
+
+  }
+
+  .company-l {
+    position: relative;
+    z-index: 9;
+    width: 30%;
+    max-width: 28rem;
+    margin: -4.7rem 1.5rem 1.5rem 0;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      max-width: 267px;
+      margin: 0 0 1.5rem 0;
+    }
+
+  }
+
+  .company__logo {
+    display: block;
+    border-radius: $border-radius;
+    border: solid 1px $color-border;
+    background-color: #ffffff;
+    max-width: 267px;
+    min-height: 100px;
+    position: relative;
+    margin-bottom: 2rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: $border-radius;
+      position: relative;
+      z-index: 3;
+    }
+
+    .company__logo_title {
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      top: 0.5rem;
+      left: 0.5rem;
+      right: 0.5rem;
+      bottom: 0.5rem;
+      justify-content: center;
+      align-items: center;
+      font-family: $font-family-narrow;
+      font-weight: bold;
+      font-size: 2.1rem;
+      color: #999999;
+      line-height: $line-height-min;
+    }
+
+    .b-inputphoto {
+      position: absolute;
+      z-index: 5;
+      bottom: -1.5rem;
+      right: 1rem;
+    }
+
+  }
+
+  .company-r {
+    width: 70%;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+
+  }
+
+  .company__descript {
+
+    .descript_name {
+      display: inline-block;
+      font-size: $font-size-hdr;
+      font-weight: bold;
+      font-family: $font-family-narrow;
+      text-decoration: none;
+      margin-right: 26rem;
+      line-height: $line-height-min;
+      color: $c-black;
+
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+      }
+
+    }
+
+    .descript_types {
+      font-family: $font-family-narrow;
+      margin-top: 1rem;
+
+      > span {
+        margin-right: 0.6rem;
+
+        &:after {
+          font-family: $font-family-base !important;
+          font-weight: bold;
+          font-size: 13px;
+          color: $c-gray-light;
+          content: "•";
+          margin-left: 0.8rem;
+        }
+
+        &:last-child:after {
+          display: none;
+        }
+
+        a {
+          white-space: nowrap;
+        }
+
+      }
+
+    }
+
+    .descript_rating {
+      position: absolute;
+      top: 3.1rem;
+      right: 6rem;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 1rem;
+        position: static;
+      }
+
+      .rating {
+        font-weight: bold;
+      }
+
+      .rating-resp {
+        color: $c-gray;
+      }
+
+    }
+
+    .descript_mechanization {
+      font-family: $font-family-narrow;
+      color: #999999;
+      line-height: $line-height-min;
+      margin-top: 0.5rem;
+    }
+
+    .descript_contact {
+      margin-top: 2rem;
+    }
+
+    .contact_item {
+      margin-left: 2.5rem;
+      display: block;
+
+      &:before {
+        display: inline-block;
+        width: 2.5rem;
+        margin-left: -3rem;
+        font-family: $fontawesome;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        color: $c-orange-dark;
+      }
+
+    }
+
+    .contact_address {
+      margin-bottom: 2rem;
+      text-decoration: none;
+
+      &:before {content: "\f3c5";}
+
+    }
+
+    .contact_tel {
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+
+      &:before {content: "\f879";}
+
+      strong {
+        font-size: 2.1rem;
+      }
+
+    }
+
+    .contact_email {
+      margin-bottom: 0.5rem;
+
+      &:before {content: "\f2b6";}
+
+    }
+
+    .contact_web {
+      margin-bottom: 0.5rem;
+
+      &:before {content: "\f0ac";}
+
+    }
+
+    .descript_r {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @include media-breakpoint-down(md) {
+        display: block;
+      }
+
+      .b-btn {
+        margin-bottom: 0.7rem;
+        max-width: 22rem;
+       }
+
+    }
+
+    .descript_shedule {
+      margin: 2rem 0 3rem 2.5rem;
+      display: block;
+
+      &:before {
+        display: inline-block;
+        width: 2.5rem;
+        margin-left: -3rem;
+        font-family: $fontawesome;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        color: $c-orange-dark;
+        content: "\f017";
+      }
+
+      span {
+        display: inline-block;
+        font-family: $font-family-narrow;
+        color: $c-gray-light;
+        background-color: $c-gray-lightermore;
+        padding: 2px 3px 1px 3px;
+        border-radius: 3px;
+        min-width: 6rem;
+        line-height: 1;
+        margin-right: 0.6rem
+      }
+
+    }
+
+  }
+
+}

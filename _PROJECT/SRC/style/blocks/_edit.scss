@@ -1,0 +1,142 @@
+.block-edit {
+  padding: 1.5rem 0;
+  border-bottom: dotted 1px #cccccc;
+
+  label {
+    font: $font-narrow;
+  }
+
+  .val {
+    color: $c-black;
+    font: $font-base;
+    padding-bottom: 0.5rem;
+
+    .form-check-label {
+      margin-top: 1rem;
+      font: $font-base;
+      color: $c-black;
+    }
+
+    label {
+      font: $font-base;
+      color: $c-black;
+    }
+
+    .form-check-input {
+      margin-top: 0.9rem;
+      //margin-right: 0.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+  }
+
+  .val--check-input {
+    padding-top: 0.8rem;
+  }
+
+  .form-note {
+    font-size: $font-size-basemin;
+    color: #999999;
+    margin: 0.5rem 0 0 0;
+    line-height: $line-height-min;
+  }
+
+  .addit-panel {
+    position: relative;
+    padding-bottom: 3rem;
+    margin-bottom: 1.5rem;
+    border-bottom: dashed 1px #dddddd;
+
+    .b-microtool {
+      position: absolute;
+      bottom: 0.5rem;
+      right: 0;
+    }
+
+  }
+
+  .b-inputphoto {
+    position: relative;
+    display: inline-block;
+    width: 15rem;
+    line-height: $line-height-min;
+    background-color: $c-gray-lighter;
+    color: $c-black !important;
+    border: solid 1px #cccccc;
+    border-radius: 3rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    font-family: $font-family-narrow;
+    font-size: $font-size-base;
+    transition: 0.3s;
+    overflow: hidden;
+    min-width: 5rem;
+    opacity: 0.75;
+
+    * {
+      color: $c-black;
+    }
+
+    i {
+      position: relative;
+      top: -1px;
+      margin-right: 0.5rem;
+    }
+
+    &:hover {
+      opacity: 1;
+      * {
+        color: $c-black;
+      }
+    }
+
+  }
+
+  .company-logo {
+    display: block;
+    border-radius: $border-radius;
+    border: solid 1px $color-border;
+    background-color: #ffffff;
+    max-width: 267px;
+    min-height: 100px;
+    position: relative;
+    margin-bottom: 2rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: $border-radius;
+      position: relative;
+      z-index: 3;
+    }
+
+  }
+
+  .company-collage {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    background: $c-gray-lighter;
+    //height: 300px;
+    overflow: hidden;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-down(md) {
+      height: auto;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+      position: relative;
+      z-index: 3;
+    }
+
+  }
+
+}

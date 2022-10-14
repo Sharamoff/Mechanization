@@ -1,0 +1,477 @@
+///////////////////////////////////////////////
+// мелочи
+
+.breadcrumb {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: -20px auto 30px auto;
+  max-width: $m-max;
+  width: 100%;
+  font-family: $font-family-narrow;
+  font-size: $font-size-base;
+  color: $c-gray-light;
+
+  @include media-breakpoint-down(lg) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
+
+.panel {
+  position: relative;
+  padding: 1.5rem 1.5rem 1.5rem 3rem;
+  margin-bottom: 1.5rem;
+  background: $c-white;
+  border-radius: $border-radius;
+  width: 100%;
+  transition: 0.3s;
+
+  @include media-breakpoint-down(lg) {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  &.panel--shadow {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  }
+
+}
+
+
+.rpanel {
+  position: relative;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  background: $c-white;
+  border-radius: $border-radius;
+  width: 100%;
+  transition: 0.3s;
+
+  &.panel--shadow {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  }
+
+}
+
+
+.bl {
+  display: inline-block;
+  margin-bottom: 2px;
+  margin-left: 0.8rem;
+  width: auto;
+  min-width: 18px;
+  min-height: 18px;
+  line-height: 18px;
+  border-radius: 10px;
+  text-align: center;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: $c-gray-light;
+  background: $c-gray-lightermore;
+  font-family: $font-family-narrow;
+  font-size: $font-size-basemin;
+  text-decoration: none !important;
+}
+
+a:hover .bl {
+  color: $c-black;
+}
+
+
+.img-inner {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  //width: 50%;
+  max-width: $blockpic-max;
+
+  @include media-breakpoint-only(xs) {
+    margin-bottom: 1rem;
+    max-width: $blockpic-max;
+  }
+
+  &.float-left {
+    float: left;
+    margin-right: 30px;
+
+    @include media-breakpoint-only(xs) {
+      margin-right: 0;
+      float: none !important;
+    }
+
+  }
+
+  &.float-right {
+    float: right;
+    margin-left: 30px;
+
+    @include media-breakpoint-only(xs) {
+      margin-left: 0;
+      float: none !important;
+    }
+
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    max-width: $blockpic-max;
+    margin-bottom: 0.5rem;
+    border-radius: $border-radius;
+  }
+
+  p {
+    font: $font-size-basemin $font-family-base;
+    line-height: $line-height-min;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    color: $c-black;
+  }
+
+}
+
+
+
+.card {
+  border-color: $color-border;
+  border-radius: $border-radius;
+  margin: 3rem 0;
+  background-color: transparent;
+
+  @include media-breakpoint-down(lg) {
+    margin: 1.5rem auto;
+  }
+
+  .card-header {
+    font: $font-hdr;
+    font-weight: bold;
+    color: $c-black;
+    padding: 0.5rem 1.5rem 0.4rem 3rem;
+    line-height: $line-height-min;
+    background-color: $c-gray-lighter;
+    border-color: $color-border;
+    border-radius: $border-radius $border-radius 0 0;
+
+    @include media-breakpoint-down(lg) {
+      padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    }
+
+  }
+
+  .card-body {
+    background-color: $color-plate;
+    padding: 1.5rem 1.5rem 0.5rem 3rem;
+    border-color: $color-border;
+    border-radius: 0 0 $border-radius $border-radius;
+
+    @include media-breakpoint-down(lg) {
+      padding: 1rem 1.5rem 0 1.5rem;
+    }
+
+  }
+
+  &--warn {
+    border: solid 1px $c-red;
+
+    .card-header {
+      color: $c-black;
+      border-color: $c-red;
+      background-color: $c-red;
+    }
+
+  }
+
+}
+
+
+
+.pagination {
+  font: $font-narrow;
+
+  .page-link {
+    color: $color-link;
+    border: solid 1px $color-border;
+    min-width: 3rem;
+    text-align: center;
+
+    &:hover {
+      color: $color-link-hover;
+      background-color: $c-white;
+    }
+
+    &:focus {
+      color: $c-gray;
+      background-color: $c-white;
+    }
+
+  }
+
+  .page-item {
+
+    &.active .page-link {
+      color: $c-white;
+      background: $c-gray;
+      border-color: $color-border;
+    }
+
+    &.disabled .page-link {
+      color: $c-gray-light;
+      background-color: $c-gray-lightermore;
+      border-color: $color-border;
+    }
+  }
+
+}
+
+
+
+.i--down {
+  display: inline-block;
+  margin-right: 1rem;
+  font-family: $fontawesome;
+  font-weight: 300;
+
+  &:before {
+    content: "\f13a";
+    @include transition($accordion-icon-transition);
+  }
+
+}
+
+.i--up {
+  display: inline-block;
+  margin-right: 1rem;
+  font-family: $fontawesome;
+  font-weight: 300;
+
+  &:before {
+    content: "\f139";
+    @include transition($accordion-icon-transition);
+  }
+
+}
+
+
+
+.c-info {
+  display: inline-block;
+  font-family: $font-family-narrow;
+  font-size: $font-size-basemin;
+  padding: 0.3rem 0.3rem 0.1rem 0.8rem;
+  background-color: $c-gray-lightermore;
+  border-radius: 3rem;
+  text-decoration: none;
+  color: #aaaaaa;
+  margin: 0.3rem;
+  line-height: 1;
+  white-space: nowrap;
+
+  .bl {
+    width: auto;
+    min-width: 17px;
+    height: 17px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: 4px;
+    background-color: $c-white;
+    color: $c-gray;
+  }
+
+}
+
+.c-date {
+  font-family: $font-family-narrow;
+  color: $c-gray-light;
+  line-height: $line-height-min;
+  white-space: nowrap;
+}
+
+.c-rec {
+
+  &:after {
+    display: inline-block;
+    font-family: $font-family-narrow;
+    font-size: $font-size-base;
+    padding: 0.3rem 1rem 0.4rem 1rem;
+    background-color: $c-gray;
+    border-radius: 3rem;
+    text-decoration: none;
+    color: $c-white;
+    margin-left: 1rem;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  &.rec--yes:after {
+    content: "рекомендую";
+    background-color: $c-orange-dark;
+  }
+
+  &.rec--no:after {
+    content: "не рекомендую";
+    background-color: $c-red;
+  }
+
+}
+
+.i-info {
+  display: inline-block;
+  font-family: $font-family-narrow;
+  font-size: $font-size-base;
+  padding: 0.15rem 1rem;
+  background-color: $c-gray-lightermore;
+  border-radius: 5px;
+  text-decoration: none;
+  color: $c-black;
+  margin: 0 1rem 1rem 0;
+  line-height: $line-height-min;
+}
+
+
+.sub-menu {
+  list-style: none;
+  padding: 0;
+
+  > li {
+    font: $font-narrow;
+    display: inline-block;
+    margin: 0.5rem 1rem 0.5rem 0;
+    white-space: nowrap;
+    line-height: 1.1;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:before {
+      content: '/';
+      color: #999999;
+      margin-right: 1rem;
+    }
+
+  }
+
+}
+
+
+.c--red {
+  color: $c-red;
+}
+
+
+.price {
+  white-space: nowrap;
+
+  &.rub:after {
+    font-size: 12px;
+  }
+
+}
+
+.rub:after {
+  font-family: $fontawesome;
+  font-size: $font-size-base;
+  content: "\f158";
+  margin-left: 0.5rem;
+  position: relative;
+  top: -1px;
+}
+
+
+
+.tabs-panel {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 ;
+  list-style: none;
+  overflow: hidden;
+
+  > li {
+    display: inline-block;
+    position: relative;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1.6rem 0.7rem 1.6rem;
+    background: $c-gray-lighter;
+    font-family: $font-family-narrow;
+    font-size: $font-size-basemax;
+    line-height: $line-height-min;
+    color: $c-black;
+    border-radius: 3rem;
+    margin: 0 10px 0 0;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-link-hover;
+    }
+
+    .bl {
+      background: $c-gray-lightermore;
+      margin-right: -0.6rem;
+      margin-bottom: 0;
+    }
+
+  }
+
+  .active a {
+    background: $c-gray;
+    color: $c-white;
+    text-decoration: none;
+    cursor: default;
+
+    .bl {
+      color: $c-black;
+      font-weight: normal;
+    }
+
+  }
+
+}
+
+
+
+a#linktab {
+  display: block;
+  position: relative;
+  top: -10rem;
+  visibility: hidden;
+}
+
+
+.dropdown-menu {
+  font: $font-narrow;
+  border: solid 1px $color-border;
+
+  @include media-breakpoint-down(lg) {
+    font-size: $font-size-base;
+  }
+
+  &.show {
+    z-index: 9999;
+  }
+
+  > li {
+    margin: 0;
+  }
+
+  .dropdown-item {
+    padding: 0.6rem 1rem;
+    color: $c-gray;
+
+    &:hover,
+    &:focus {
+      color: $c-black;
+      background-color: #e5e5e5 !important;
+    }
+
+    i {
+      margin-right: 0.8rem;
+    }
+
+  }
+
+}

@@ -1,0 +1,90 @@
+.modal.show {
+	padding-right: 17px;
+	padding-left: 17px;
+
+	@include media-breakpoint-down(md) {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+
+}
+
+
+.modal-dialog {
+	max-width: 60rem;
+	margin-top: 10%;
+
+	@include media-breakpoint-down(md) {
+		margin-top: 5px;
+	}
+
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+	padding: 1.5rem 3rem;
+}
+
+.modal-body {
+		padding-bottom: 3rem;
+}
+
+.modal-header {
+	position: relative;
+	background-color: $color-bk-body;
+
+	.btn-close {
+		position: absolute;
+		z-index: 9;
+		top: 2rem;
+		right: 1.5rem;
+	}
+
+	.mainhdr {
+		margin: 0;
+	}
+
+}
+
+.modal-body {
+
+}
+
+
+
+#id_modal-userlogin {
+
+	.modal-dialog {
+		max-width: 50rem;
+		margin-top: 5%;
+
+		@include media-breakpoint-down(md) {
+			margin-top: 5rem;
+		}
+
+	}
+
+	.modal-content {
+		border-radius: $border-radius;
+		background: $c-black;
+	}
+
+	.modal-header,
+	.modal-body,
+	.modal-footer {
+		position: relative;
+		color: $c-white;
+		padding: 0;
+	}
+
+	.btn-close {
+		position: absolute;
+		z-index: 9;
+		top: 0;
+		right: 1.5rem;
+		color: $c-white;
+		font-size: 2.5rem;
+	}
+
+}

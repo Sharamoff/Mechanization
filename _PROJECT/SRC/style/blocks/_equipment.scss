@@ -1,0 +1,68 @@
+.block-equipment {
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+
+  @include media-breakpoint-down(md) {
+    padding-left: 1.5rem;
+  }
+
+  h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    line-height: 1;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+      margin-right: 1.2rem;
+    }
+
+  }
+
+  .equipment__items {
+    list-style: none;
+    padding-left: 0;
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(md) {
+      margin-right: 0;
+    }
+
+    > li {
+      border-bottom: dotted 1px #cccccc;
+      margin: 0;
+      padding: 0;
+
+      a {
+        display: flex;
+        align-items: flex-end;
+        padding: 12px 0 0 0;
+        font: $font-narrow;
+        text-decoration: none;
+
+        &:hover {
+
+          .bl {
+            color: $c-black;
+          }
+
+        }
+
+      }
+
+    }
+
+    .bl {
+      margin-left: auto;
+    }
+
+  }
+
+}

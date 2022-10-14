@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<title>Механизация.ру</title>
+
+	<link href="css/vendor.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/addit.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+
+
+//= layout/_header.html
+
+
+
+
+
+//= layout/_mainmenu.html
+
+
+
+
+
+<nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+		<li class="breadcrumb-item"><a href="#">Календарь событий</a></li>
+		<li class="breadcrumb-item active" aria-current="page">Международная конференция и выставка - TECH MINING RUSSIA: Siberia</li>
+	</ol>
+</nav>
+
+
+
+
+
+<div class="wrap wrap--twocolumn">
+<div class="row">
+<!-- left column -->
+<div class="col-lg-9 wrap__col-left">
+
+
+	<div class="hdr-linked">
+		<h1>TECH MINING RUSSIA: SIBERIA</h1>
+		<a href="#" class="hdr-link">Весь календарь событий<i class="fal fa-calendar-alt"></i></a>
+	</div>
+
+
+	<section class="pagecontent sc_pg-event">
+
+
+		<div class="txt">
+
+			<div class="img-inner float-left"><img src="img/126_thumbnail.gif" alt="bauma CTT RUSSIA 2022"></div>
+
+			<h2>Международная конференция и выставка - TECH MINING RUSSIA: Siberia</h2>
+
+			<p class="txt__date">17.03.2022 — 18.03.2022</p>
+
+			<p class="txt__address">Россия, Иркутск, ул. Чкалова, д.15, отель Marriott Courtyard Иркутск Сити Центр</p>
+
+		</div>
+
+
+		<div class="txt">
+
+			<p>Сибирский Федеральный округ является одним из лидеров горнодобывающей отрасли, в нем сосредоточено множество предприятий ведущих горнодобывающих компаний. Мы рады объявить, что 17 и 18 марта 2022 в Иркутске состоится Международная конференция и выставка технологий для горнодобывающей отрасли TECH MINING СИБИРЬ 2022, НОВЫЕ ТЕХНОЛОГИИ ДОБЫЧИ ПОЛЕЗНЫХ ИСКОПАЕМЫХ. Специалисты компаний, ведущих разработки в этом регионе, собираются для активной работы в течение двух дней конференции. Аудитория мероприятия представляет собой удачный синтез представителей горнодобывающего сообщества, научного сообщества и бизнеса.</p>
+
+			<p>&nbsp;</p>
+
+			<h2>Контакты организаторов:</h2>
+			<ul class="txt__linklist">
+				<li><span>Телефон:</span> <a href="tel:+74991120511">+7 499 11-205-11</a></li>
+				<li><span>E-mail: </span> <a href="mailto:info@techmining.ru">info@techmining.ru</a></li>
+				<li><span>Сайт:</span> <a href="https://siberia.techmining.ru/">siberia.techmining.ru</a></li>
+			</ul>
+
+		</div>
+
+
+		<div class="mymap" id="id_map-event"></div>
+
+
+		<button class="b-btn mt-5 m-auto"><i class="fal fa-file-signature"></i>Зарегистрироваться на выставку онлайн</button>
+
+
+	</section>
+
+
+
+</div>
+<!-- end left column -->
+<!-- right column -->
+<div class="col-lg-3 hidden-lg-down wrap__col-right col-right--padded-top">
+
+
+
+	<div class="col-adv sticked">
+		
+		<div class="block-adv">
+			<a href="#"><img src="img/_adv1.jpg" width="100%" alt=""></a>
+		</div>
+
+		<div class="block-adv">
+			<a href="#"><img src="img/_adv2.jpg" width="100%" alt=""></a>
+		</div>
+
+		<div class="adv">
+			<a href="#"><img src="img/_adv3.jpg" width="100%" alt=""></a>
+		</div>
+		
+	</div>
+
+
+
+</div>
+<!-- end right column -->
+</div>
+</div>
+
+
+
+
+
+//= layout/_footer.html
+
+
+
+
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+	ymaps.ready(init);
+	var myMap,
+		myPlacemark;
+
+	function init(){
+		myMap = new ymaps.Map ("id_map-event", {
+			center: [52.288455963135, 104.274131774902],
+			zoom: 15
+		});
+
+		myPlacemark = new ymaps.Placemark([52.288455963135, 104.274131774902],
+			{
+				hintContent: "TECH MINING RUSSIA: Siberia",
+				balloonContent: ''
+			}, {
+				preset: 'islands#dotIcon',
+				iconColor: '#ff8000'
+			});
+
+		myMap.geoObjects.add(myPlacemark);
+		myMap.controls.add('zoomControl', { top: 10, left: 10 });
+		myMap.behaviors.disable('scrollZoom');
+	}
+	});
+</script>
+
+
+
+</body>
+</html>

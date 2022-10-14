@@ -1,0 +1,113 @@
+///////////////////////////////////////////////
+// настройка bootstrap-select
+
+.bootstrap-select{
+	font-family: $font-family-narrow;
+
+	.btn {
+		font-size: $font-size-basemax;
+		background-color: $c-white;
+		border: 1px solid #cccccc;
+		border-radius: 0.25rem !important;
+	}
+
+	> select.mobile-device:focus + .dropdown-toggle,
+	.dropdown-toggle:focus {
+		outline: 1px dotted $c-gray !important;
+		outline-offset: -3px;
+	}
+
+	> .dropdown-toggle.bs-placeholder,
+	> .dropdown-toggle.bs-placeholder:hover,
+	> .dropdown-toggle.bs-placeholder:focus,
+	> .dropdown-toggle.bs-placeholder:active {
+		color: $color-placeholder;
+	}
+
+	.dropdown-menu {
+		font-size: $font-size-basemax;
+
+		&.show {
+			z-index: 9999;
+		}
+
+		li {
+			margin-top: 0.3rem;
+			margin-bottom: 0.3rem;
+		}
+
+	}
+
+	.bs-ok-default:after {
+		width: 0.4em;
+		height: 0.8em;
+		border-width: 0 0.2em 0.2em 0;
+	}
+
+	.bs-searchbox {
+
+		input[type="search"] {
+			font-size: $font-size-base !important;
+			background: #eeeeee;
+			color: #666666;
+			padding: 3px 6px;
+			border-color: #cccccc !important;
+
+			&:focus {
+				outline: none !important;
+			}
+
+		}
+
+	}
+
+	.dropdown-header {
+		font-size: $font-size-base;
+		margin-bottom: 0 !important;
+	}
+
+	.actions-btn {
+		font-size: $font-size-base !important;
+		padding: 0.3rem !important;
+		white-space: nowrap;
+		background: #eeeeee;
+		color: #666666;
+
+		&:hover {
+			color: #000000;
+		}
+
+	}
+
+	.far,
+	.fal,
+	.fas {
+		width: 2.5rem;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

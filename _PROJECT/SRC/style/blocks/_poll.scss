@@ -1,0 +1,25 @@
+.block-rpoll {
+  padding-top: 0.5rem;
+  line-height: $line-height-min;
+
+  form {
+
+    label {
+      color: $c-black;
+      white-space: break-spaces;
+      font-family: $font-family-base;
+      font-size: $font-size-basemin;
+    }
+
+  }
+
+  .rpoll__links {
+    margin: 3rem 0 0 0;
+
+    > li {
+      font-size: $font-size-base;
+    }
+
+  }
+
+}

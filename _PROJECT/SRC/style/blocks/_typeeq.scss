@@ -1,0 +1,42 @@
+.block-idx_typeeq {
+
+  a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 60px;
+    padding: 0 1rem 0 1.2rem;
+    background: $c-white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+    font-family: $font-family-narrow;
+    font-size: $font-size-basemax;
+    line-height: 1;
+    color: $c-black;
+    border-radius: $btn-border-radius;
+    margin-bottom: 15px;
+
+    @include media-breakpoint-down(md) {
+      height: 50px;
+    }
+
+    &:hover {
+      color: $c-orange-dark;
+      box-shadow: none;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+      margin-right: 1.2rem;
+    }
+
+    .bl {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      background: $c-gray-lighter;
+    }
+
+  }
+
+}

@@ -1,0 +1,59 @@
+.block-newslist {
+  padding-top: 1.5rem;
+
+  h2, p {
+    transition: 0.3s;
+  }
+
+  &:hover {
+    box-shadow: none;
+
+    p {
+      color: $c-black;
+    }
+
+    h2 {
+      color: $c-orange-dark;
+    }
+
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    color: $c-gray-light;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+}
+
+.newslist__company {
+  color: $c-gray-light;
+  margin-bottom: 1rem;
+  font-size: $font-size-hdr;
+  font-weight: bold;
+  font-family: $font-family-narrow;
+}
+
+.newslist__img {
+  margin-bottom: 1.5rem;
+
+  img {
+    width: 100%;
+    max-width:300px;
+    height: auto;
+  }
+
+}
+
+.newslist__date {
+  color: $c-red;
+  font-family: $font-family-narrow;
+  font-size: $font-size-basemax;
+  font-weight: bold;
+}
