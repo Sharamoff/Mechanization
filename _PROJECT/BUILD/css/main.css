@@ -4001,6 +4001,22 @@ OL.ol--cont > li:before {
   font-size: 1.5rem;
 }
 
+.rpoll__result .result-item {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+.rpoll__result .rpool-bar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.rpoll__result .rpool-bar > div {
+  height: 5px;
+  border-radius: 1rem;
+  background: #ffa400;
+  margin-right: 0.5rem;
+}
+
 .table-itemcomplectation .tt--compname {
   width: 100%;
   color: black;

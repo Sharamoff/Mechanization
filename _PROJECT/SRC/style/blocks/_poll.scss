@@ -23,3 +23,26 @@
   }
 
 }
+
+.rpoll__result {
+
+  .result-item {
+    margin: 1rem 0;
+    font-size: $font-size-basemin;
+  }
+
+  .rpool-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    > div {
+      height: 5px;
+      border-radius: 1rem;
+      background: $c-orange;
+      margin-right: 0.5rem;
+    }
+
+  }
+
+}
