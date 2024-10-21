@@ -1,0 +1,117 @@
+.block-idx_bboard {
+  padding-left: 3rem;
+
+  @include media-breakpoint-down(md) {
+    padding-left: 1.5rem;
+  }
+
+  .bboard__hdr {
+    height: 15rem;
+    display: block;
+    position: relative;
+    margin: -1.5rem -1.5rem 1.5rem -3rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: $c-gray-light;
+    border-radius: $border-radius $border-radius 0 0;
+    transition: all 0.5s;
+
+    @include media-breakpoint-down(md) {
+      margin: -1.5rem -1.5rem 0.5rem -1.5rem;
+    }
+
+    &.hdr--bboard1 { background-image: url("../img/bbord-pic1.jpg"); }
+    &.hdr--bboard2 { background-image: url("../img/bbord-pic2.jpg"); }
+    &.hdr--bboard3 { background-image: url("../img/bbord-pic3.jpg"); }
+    &.hdr--bboard4 { background-image: url("../img/bbord-pic4.jpg"); }
+
+    h2 {
+      position :absolute;
+      z-index: 9;
+      bottom: 0;
+      text-transform: uppercase;
+      padding: 0 1.5rem 0 3rem;
+      color: $c-white;
+      transition: all 0.5s;
+
+      @include media-breakpoint-down(md) {
+        padding: 0 1.5rem;
+      }
+
+      .bl {
+        top: -3px;
+      }
+
+    }
+
+    &:hover {
+
+      h2 {
+        color: $color-link-hover;
+      }
+
+      &.hdr--bboard1 { background-image: url("../img/bbord-pic1_.jpg"); }
+      &.hdr--bboard2 { background-image: url("../img/bbord-pic2_.jpg"); }
+      &.hdr--bboard3 { background-image: url("../img/bbord-pic3_.jpg"); }
+      &.hdr--bboard4 { background-image: url("../img/bbord-pic4_.jpg"); }
+
+    }
+
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0.5rem;
+      max-width: none;
+    }
+
+    > li {
+      border-bottom: dotted 1px #cccccc;
+      margin: 0;
+      padding: 0;
+
+      a {
+        display: flex;
+        align-items: flex-end;
+        padding: 12px 0 0 0;
+        gap: 5px;
+        font: $font-narrow;
+        text-decoration: none;
+
+        &:hover {
+
+          .bl {
+            color: $c-black;
+          }
+
+        }
+
+      }
+
+    }
+
+    .bl {
+      margin-left: auto;
+    }
+
+  }
+
+  ul.ul--bboard-services {
+    margin-left: 2rem;
+
+    @include media-breakpoint-down(md) {
+      margin-left: 0;
+    }
+
+  }
+
+}
+
+
+
+
