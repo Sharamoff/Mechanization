@@ -2,10 +2,9 @@
 // настройка bootstrap-select
 
 .bootstrap-select{
-	font-family: $font-family-narrow;
 
 	.btn {
-		font-size: $font-size-basemax;
+		font-size: $font-size-base;
 		background-color: $c-white;
 		border: 1px solid #cccccc;
 		border-radius: 0.25rem !important;
@@ -79,6 +78,10 @@
 
 	}
 
+	.dropdown-item.active {
+		background-color: $c-gray-lighter;
+	}
+
 	.far,
 	.fal,
 	.fas {
@@ -89,8 +92,17 @@
 
 
 
+.multiline-select {
+	white-space: normal !important;
+	height: auto;
+}
 
-
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+	display: block;
+	white-space: normal;
+	max-height: 110px;
+	overflow-y: auto;
+}
 
 
 

@@ -1,0 +1,102 @@
+.block-watch {
+  position: relative;
+  padding: 1.5rem 0;
+  border-bottom: dotted 1px #cccccc;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  transition: all 0.3s;
+  min-height: 10rem;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: $color-link-hover;
+    }
+
+  }
+
+  .b-tofav {
+    background: transparent;
+    top: 1.5rem;
+    right: 0;
+  }
+
+  .watch__pic {
+    min-width: 8rem;
+    max-width: 10rem;
+    background-color: $c-white;
+    border: solid 1px $c-white;
+    flex-shrink: 1;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+  .watch__descript {
+    flex-grow: 1;
+    overflow: hidden;
+  }
+
+  .descript_title {
+    font-family: $font-family-narrow;
+    font-weight: bold;
+    line-height: $line-height-min;
+    color: $c-black;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    padding-right: 3rem;
+    padding-top: 0.5rem;
+  }
+
+  .descript_price {
+    margin-top: 0;
+
+    &.rub:after {
+      font-size: 1.2rem;
+      font-weight: normal;
+    }
+
+  }
+
+  .descript_address {
+    font-family: $font-family-narrow;
+    font-size: $font-size-basemin;
+    line-height: $line-height-min;
+    color: $c-gray;
+    margin-top: 0.5rem;
+  }
+
+}
+
+.block-watch:hover {
+
+  @include media-breakpoint-up(lg) {
+    gap: 0;
+
+    .watch__pic {
+      min-width: auto;
+      width: 0;
+      border: none;
+    }
+
+  }
+
+  .watch__descript {
+    overflow: visible;
+  }
+
+  .descript_title {
+    white-space: wrap;
+    text-overflow: inherit;
+  }
+
+}

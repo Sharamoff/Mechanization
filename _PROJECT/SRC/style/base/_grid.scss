@@ -214,10 +214,30 @@ BODY {
 	.wrap__col-right {
 		padding-left: 23px;
 
-		&.col-right--padded-top {
-			padding-top: 4.3rem;
+		@include media-breakpoint-down(lg) {
+			margin-top: 3rem;
+			padding-left: 7px;
 		}
 
+		&.col-right--padded-top {
+			padding-top: 4.3rem;
+
+			@include media-breakpoint-down(lg) {
+				padding-top: 0;
+			}
+
+		}
+
+	}
+
+}
+
+
+.plate-col {
+	margin-bottom: 3rem;
+
+	> h2 {
+		margin-top: 0;
 	}
 
 }
