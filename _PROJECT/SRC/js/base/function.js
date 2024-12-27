@@ -19,6 +19,7 @@ $('.header__hamb').on('click', function () {
   $('.top-adv').toggleClass('active');
   $('.mainmenu').toggleClass('active');
   $('.overlay').toggleClass('active');
+  $('.mainmenu__regionplate').removeClass('active');
   $('body').toggleClass('modal-open');
 });
 $('.overlay, .mainmenu__links a, .mainmenu__btns button, .header__hamb.active').on('click', function () {

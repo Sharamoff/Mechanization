@@ -106,7 +106,6 @@
       <div class="col-md-8">
         <div class="nav nav-pills regionplate_navs" role="tablist">
           <a class="nav-item nav-link active" id="nav-tab-ru" data-bs-toggle="tab" href="#nav-ru" role="tab" aria-controls="nav-ru" aria-selected="true">Россия</a>
-          <a class="nav-item nav-link" id="nav-tab-uk" data-bs-toggle="tab" href="#nav-uk" role="tab" aria-controls="nav-uk" aria-selected="false">Украина</a>
           <a class="nav-item nav-link" id="nav-tab-by" data-bs-toggle="tab" href="#nav-by" role="tab" aria-controls="nav-by" aria-selected="false">Белоруссия</a>
           <a class="nav-item nav-link" id="nav-tab- kz" data-bs-toggle="tab" href="#nav-kz" role="tab" aria-controls="nav-kz" aria-selected="false">Казахстан</a>
         </div>
@@ -232,46 +231,6 @@
             <li><a href="#" rel="г. Южно-Сахалинск, Россия" class="link_select_region">Южно-Сахалинск</a></li>
             <li><a href="#" rel="г. Якутск, Россия" class="link_select_region">Якутск</a></li>
             <li><a href="#" rel="г. Ярославль, Россия" class="link_select_region">Ярославль</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="tab-pane fade" id="nav-uk" role="tabpanel" aria-labelledby="nav-tab-uk">
-        <div class="row">
-          <ul class="col-6 col-md-4 col-lg-2">
-            <li><a href="#" rel="г. Киев, Украина" class="link_select_region">Киев</a></li>
-            <li><a href="#" rel="г. Винница, Украина" class="link_select_region">Винница</a></li>
-            <li><a href="#" rel="г. Днепропетровск, Украина" class="link_select_region">Днепропетровск</a></li>
-            <li><a href="#" rel="г. Донецк, Украина" class="link_select_region">Донецк</a></li>
-          </ul>
-          <ul class="col-6 col-md-4 col-lg-2">
-            <li><a href="#" rel="г. Житомир, Украина" class="link_select_region">Житомир</a></li>
-            <li><a href="#" rel="г. Ивано-Франковск, Украина" class="link_select_region">Ивано-Франковск</a></li>
-            <li><a href="#" rel="г. Кировоград, Украина" class="link_select_region">Кировоград</a></li>
-            <li><a href="#" rel="г. Луганск, Украина" class="link_select_region">Луганск</a></li>
-          </ul>
-          <ul class="col-6 col-md-4 col-lg-2">
-            <li><a href="#" rel="г. Луцк, Украина" class="link_select_region">Луцк</a></li>
-            <li><a href="#" rel="г. Львов, Украина" class="link_select_region">Львов</a></li>
-            <li><a href="#" rel="г. Николаев, Украина" class="link_select_region">Николаев</a></li>
-            <li><a href="#" rel="с. Новое Запорожье, Украина" class="link_select_region">Новое Запорожье</a></li>
-          </ul>
-          <ul class="col-6 col-md-4 col-lg-2">
-            <li><a href="#" rel="г. Одесса, Украина" class="link_select_region">Одесса</a></li>
-            <li><a href="#" rel="г. Полтава, Украина" class="link_select_region">Полтава</a></li>
-            <li><a href="#" rel="г. Ровно, Украина" class="link_select_region">Ровно</a></li>
-            <li><a href="#" rel="г. Сумы, Украина" class="link_select_region">Сумы</a></li>
-          </ul>
-          <ul class="col-6 col-md-4 col-lg-2">
-            <li><a href="#" rel="г. Тернополь, Украина" class="link_select_region">Тернополь</a></li>
-            <li><a href="#" rel="г. Ужгород, Украина" class="link_select_region">Ужгород</a></li>
-            <li><a href="#" rel="г. Харьков, Украина" class="link_select_region">Харьков</a></li>
-            <li><a href="#" rel="г. Херсон, Украина" class="link_select_region">Херсон</a></li>
-          </ul>
-          <ul class="col-6 col-md-4 col-lg-2">
-            <li><a href="#" rel="г. Хмельницкий, Украина" class="link_select_region">Хмельницкий</a></li>
-            <li><a href="#" rel="г. Черкассы, Украина" class="link_select_region">Черкассы</a></li>
-            <li><a href="#" rel="г. Чернигов, Украина" class="link_select_region">Чернигов</a></li>
-            <li><a href="#" rel="г. Черновцы, Украина" class="link_select_region">Черновцы</a></li>
           </ul>
         </div>
       </div>
@@ -467,7 +426,6 @@
   <div class="mainmenu__search">
     <input  type="search" id="fld-menusearch" class="search_fld" name="fld-search" placeholder="Поиск по сайту" autocomplete="off">
     <button type="submit" id="b-menusearch" class="search_btn" title="Поиск по сайту"></button>
-
   </div>
 
 
@@ -479,6 +437,16 @@
         <button class="b-sbtn"><i class="fal fa-layer-plus"></i>Разместить обьявление</button>
         <button class="b-sbtn"><i class="fal fa-list-alt"></i>Зарегистрировать компанию</button>
       </div>
+
+      <ul class="mainmenu__links links--userlogin">
+        <li><i class="fas fa-user-circle"></i> <a href="#" data-bs-toggle="modal" data-bs-target="#id_modal-userlogin">Личный кабинет</a></li>
+      </ul>
+      <ul class="mainmenu__links links--tools">
+        <li><a href="#">Избранное<span class="bl">6</span></a></li>
+        <li><a href="#">Вы смотрели</a></li>
+        <li><a href="#">Сообщения<span class="bl">369</span></a></li>
+      </ul>
+
     </div>
 
     <div class="col-md-3">
@@ -543,14 +511,6 @@
         <li><a href="#"><strong>Пресс-релизы</strong></a></li>
         <li><a href="#"><strong>Календарь событий</strong></a></li>
         <li><a href="#"><strong>Машины и механизмы</strong></a></li>
-      </ul>
-      <ul class="mainmenu__links">
-        <li><a href="#" data-bs-toggle="modal" data-bs-target="#id_modal-userlogin"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Личный кабинет</a></li>
-      </ul>
-      <ul class="mainmenu__links">
-        <li><a href="#">Избранное<span class="bl">6</span></a></li>
-        <li><a href="#">Вы смотрели</a></li>
-        <li><a href="#">Сообщения<span class="bl">369</span></a></li>
       </ul>
     </div>
 

@@ -572,7 +572,7 @@ header {
   right: 0;
   z-index: 1000;
   width: 100%;
-  max-height: 90vh;
+  height: 100dvh;
   background-color: white;
   overflow-y: auto;
   transition: all 0.5s;
@@ -595,7 +595,6 @@ header {
 @media (max-width: 991.98px) {
   .mainmenu.active {
     top: 47px;
-    height: 90vh;
   }
 }
 
@@ -607,6 +606,8 @@ header {
   margin-right: auto;
   max-width: 1434px;
   width: 100%;
+  min-height: 100%;
+  padding-bottom: 5rem;
 }
 @media (max-width: 991.98px) {
   .wrap-mainmenu {
@@ -646,7 +647,6 @@ header {
   top: 3rem;
   left: 30px;
   right: 30px;
-  bottom: 1.5rem;
   background: #eeeeee;
   border-radius: 4px;
   overflow-y: auto;
@@ -659,7 +659,7 @@ header {
   .mainmenu__regionplate {
     left: 15px;
     right: 15px;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 5rem 1.5rem;
   }
 }
 .mainmenu__regionplate .regionplate_navs {
@@ -683,6 +683,7 @@ header {
 }
 .mainmenu__regionplate .regionplate_tabs {
   margin-top: 1.5rem;
+  margin-bottom: 3rem;
 }
 .mainmenu__regionplate .regionplate_tabs ul {
   list-style: none;
@@ -691,7 +692,7 @@ header {
 }
 @media (max-width: 991.98px) {
   .mainmenu__regionplate .regionplate_tabs ul {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
   }
 }
 .mainmenu__regionplate .regionplate_tabs ul > li {
@@ -765,6 +766,16 @@ header {
   color: black;
   background-color: #ffa400;
   margin-left: 0.5rem;
+}
+@media (min-width: 992px) {
+  .mainmenu__links.links--userlogin {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .mainmenu__links.links--tools {
+    display: none;
+  }
 }
 
 footer {
@@ -1747,7 +1758,7 @@ button.disabled:hover {
   text-align: center;
   text-decoration: none;
   display: block;
-  background: white;
+  background: rgba(255, 255, 255, 0.85);
   border-radius: 5px;
 }
 @media (max-width: 767.98px) {
@@ -1760,7 +1771,7 @@ button.disabled:hover {
 }
 .b-tofav:before {
   font-family: "Font Awesome 5 Pro";
-  font-size: 2.1rem;
+  font-size: 1.9rem;
   content: "";
   color: black;
   transition: 0.3s;
@@ -3866,6 +3877,9 @@ OL.ol--cont > li:before {
 }
 .block-itemlist a {
   text-decoration: none;
+}
+.block-itemlist .b-tofav {
+  top: 1.5rem;
 }
 .block-itemlist .itemlist__pics {
   margin: 6px;
