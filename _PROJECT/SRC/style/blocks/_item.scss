@@ -33,6 +33,7 @@
   }
 
   .itemlist__name {
+    display: block;
     font:$font-narrow;
     color: $c-black;
     text-align: center;
