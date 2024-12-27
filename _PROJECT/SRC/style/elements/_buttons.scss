@@ -244,7 +244,7 @@ button.disabled:hover {
 	text-align: center;
 	text-decoration: none;
 	display: block;
-	background: $c-white;
+	background: rgba(255,255,255,0.85);
 	border-radius: $border-radius;
 
 	@include media-breakpoint-down(md) {
@@ -256,7 +256,7 @@ button.disabled:hover {
 
 	&:before {
 		font-family: $fontawesome;
-		font-size: 2.1rem;
+		font-size: 1.9rem;
 		content: "\f004";
 		color: $c-black;
 		transition: 0.3s;
