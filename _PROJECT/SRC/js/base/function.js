@@ -256,3 +256,73 @@ $('.cab_checkall').on('click', function () {
     aa.elements[i].checked = checked;
   }
 });
+
+
+
+// программинг Сообщения
+
+function adjustGridMessages() {
+  const grid = $(".grid-messages__messtopic");
+  if ($(window).width() <= (992 - 17)) {
+    grid.addClass("collapsed");
+    $(".grid-messages").removeClass("opened");
+    grid.find(".block-messtopic").hide();
+    grid.find(".block-messtopic.active").show();
+  } else {
+    grid.removeClass("collapsed");
+    grid.find(".block-messtopic").show();
+    grid.css("height", "auto");
+  }
+  if ($(".block-messtopic.active").length === 0) {
+    grid.removeClass("collapsed");
+    $(".grid-messages").addClass("opened");
+    grid.find(".block-messtopic").show();
+  }
+}
+adjustGridMessages()
+$(window).on("resize", adjustGridMessages);
+
+
+$(document).on("click", ".block-messtopic", function () {
+
+  $('.block-messchat').css("display", "block");
+
+  const grid = $(this).closest(".grid-messages__messtopic");
+  grid.find(".block-messtopic").removeClass("active");
+  $(this).addClass("active");
+
+  const inputSection = $(".grid-messages__messinput");
+  if ($(this).hasClass("sys")) {
+    inputSection.addClass("disabled");
+    inputSection.find("input, button").attr("disabled", true);
+  } else {
+    inputSection.removeClass("disabled");
+    inputSection.find("input, button").attr("disabled", false);
+  }
+
+  if ($(window).width() <= (992 - 17)) {
+    $(".grid-messages").addClass("opened");
+    grid.find(".block-messtopic").show();
+  }
+
+});
+
+
+$(document).on("click", ".block-messtopic.active", function () {
+  const grid = $(this).closest(".grid-messages__messtopic");
+  if ($(window).width() <= (992 - 17)) {
+    if (grid.hasClass("collapsed")) {
+      grid.removeClass("collapsed");
+      grid.find(".block-messtopic").show();
+      grid.css("height", "auto");
+    } else {
+      grid.addClass("collapsed");
+      $(".grid-messages").removeClass("opened");
+      grid.find(".block-messtopic").hide();
+      grid.find(".block-messtopic.active").show();
+    }
+  }
+});
+
+
+
