@@ -261,6 +261,7 @@ $('.cab_checkall').on('click', function () {
 });
 
 
+
 // программинг Сообщения
 
 function adjustGridMessages() {
@@ -286,12 +287,20 @@ $(window).on("resize", adjustGridMessages);
 
 
 $(document).on("click", ".block-messtopic", function () {
-
-  $('.block-messchat').css("display", "block");
-
   const grid = $(this).closest(".grid-messages__messtopic");
+  const messages = $(".grid-messages");
+
+  if ($(window).width() <= (992 - 17) && grid.hasClass("collapsed")) {
+    grid.removeClass("collapsed");
+    messages.addClass("opened");
+    grid.find(".block-messtopic").show();
+    return;
+  }
+
   grid.find(".block-messtopic").removeClass("active");
   $(this).addClass("active");
+
+  $(".block-messchat").css("display", "block");
 
   const inputSection = $(".grid-messages__messinput");
   if ($(this).hasClass("sys")) {
@@ -303,26 +312,12 @@ $(document).on("click", ".block-messtopic", function () {
   }
 
   if ($(window).width() <= (992 - 17)) {
-    $(".grid-messages").addClass("opened");
-    grid.find(".block-messtopic").show();
-  }
-
-});
-
-
-$(document).on("click", ".block-messtopic.active", function () {
-  const grid = $(this).closest(".grid-messages__messtopic");
-  if ($(window).width() <= (992 - 17)) {
-    if (grid.hasClass("collapsed")) {
-      grid.removeClass("collapsed");
-      grid.find(".block-messtopic").show();
-      grid.css("height", "auto");
-    } else {
-      grid.addClass("collapsed");
-      $(".grid-messages").removeClass("opened");
-      grid.find(".block-messtopic").hide();
-      grid.find(".block-messtopic.active").show();
-    }
+    messages.removeClass("opened");
+    grid.addClass("collapsed");
+    grid.find(".block-messtopic").hide();
+    grid.find(".block-messtopic.active").show();
+  } else {
+    messages.addClass("opened");
   }
 });
 
