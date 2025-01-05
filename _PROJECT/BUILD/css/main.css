@@ -78,7 +78,6 @@ BODY {
   background-color: #eeeeee;
   color: #444444;
   height: auto !important;
-  min-height: 100rem;
   line-height: 1.4;
   overflow-y: scroll;
 }
@@ -213,12 +212,12 @@ BODY.body--with_top-adv .header-fix {
   margin-right: auto;
   max-width: 1434px;
   width: 100%;
-  min-height: 80rem;
 }
 @media (max-width: 991.98px) {
   .wrap {
     padding-left: 15px;
     padding-right: 15px;
+    min-height: auto;
   }
 }
 .wrap:first-child {
@@ -5078,6 +5077,7 @@ OL.ol--cont > li:before {
   grid-auto-flow: row;
   grid-template-areas: "grid-messages__messtopic grid-messages__chat" "grid-messages__messtopic grid-messages__mess";
   height: calc(100dvh - 22rem);
+  padding-bottom: 0.5rem;
 }
 @media (max-width: 991.98px) {
   .grid-messages {
@@ -5105,32 +5105,75 @@ OL.ol--cont > li:before {
 .grid-messages__messtopic {
   grid-area: grid-messages__messtopic;
   overflow-y: auto;
-  transition: height 0.3s ease;
+  height: auto;
+  transition: all 1s;
 }
 @media (max-width: 991.98px) {
   .grid-messages__messtopic {
     overflow-y: hidden;
+    transition: all 1s;
   }
 }
 .grid-messages__messtopic.collapsed {
   height: 8rem;
   background-color: white;
   border-radius: 5px;
+  transition: all 1s;
 }
 
 .grid-messages__messchat {
+  position: relative;
   grid-area: grid-messages__chat;
   background: white url("../img/ch-chat.svg") no-repeat center center;
   overflow-y: auto;
   border-radius: 5px;
   border: 3px solid white;
-  padding: 1.5rem 3rem;
+  padding: 0 3.3rem 1.5rem 3.3rem;
 }
 @media (max-width: 991.98px) {
   .grid-messages__messchat {
     padding: 0 1rem;
     background: white;
   }
+}
+.grid-messages__messchat .messchat__submenu {
+  display: none;
+  position: sticky;
+  top: 0;
+  margin-left: -3rem;
+  margin-right: -3rem;
+}
+@media (max-width: 991.98px) {
+  .grid-messages__messchat .messchat__submenu {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
+.grid-messages__messchat .messchat__submenu button {
+  border: none;
+  border-radius: 3px;
+  color: #444444;
+  background: rgba(221, 221, 221, 0.5);
+  width: 3rem;
+  height: 2.8rem;
+  text-align: center;
+  line-height: 3rem;
+  margin-left: auto;
+  float: right;
+}
+.grid-messages__messchat .messchat__submenu button:before {
+  font: 1.7rem/1 "Font Awesome 5 Pro";
+  content: "";
+}
+.grid-messages__messchat .messchat__submenu .dropdown-menu {
+  border-radius: 5px 0 5px 5px;
+  background: #f5f5f5;
+  margin-top: -5px;
+  z-index: 999;
+  font-size: 1.5rem;
+}
+.grid-messages__messchat .messchat__submenu .dropdown-menu .dropdown-item {
+  padding: 0.6rem 1.5rem;
 }
 
 .grid-messages__messinput {
@@ -5159,6 +5202,7 @@ OL.ol--cont > li:before {
   position: relative;
   display: flex;
   gap: 1rem;
+  height: 8rem;
   padding: 1rem;
   justify-content: space-between;
   align-items: center;
@@ -5176,6 +5220,22 @@ OL.ol--cont > li:before {
 @media (max-width: 991.98px) {
   .block-messtopic.active {
     cursor: pointer;
+  }
+  .block-messtopic.active:after {
+    content: "";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.8rem;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 3.6rem;
+    height: 3.2rem;
+    background-color: #dddddd;
+    border: solid 3px white;
+    border-radius: 6px;
   }
 }
 .block-messtopic.online .notice-companyname:before {
@@ -5283,7 +5343,7 @@ OL.ol--cont > li:before {
 }
 @media (max-width: 767.98px) {
   .block-messchat .messchat__in {
-    margin-right: 2rem;
+    margin-right: 2.3rem;
   }
 }
 .block-messchat .messchat__out {
@@ -5291,11 +5351,12 @@ OL.ol--cont > li:before {
   background-color: #FFEDCC;
   border-radius: 1rem 1rem 0 1rem;
   margin-left: 9rem;
+  margin-right: 3px;
   margin-bottom: 1rem;
 }
 @media (max-width: 767.98px) {
   .block-messchat .messchat__out {
-    margin-left: 2rem;
+    margin-left: 2.3rem;
   }
 }
 .block-messchat .notviewed,

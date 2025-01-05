@@ -14,7 +14,7 @@ BODY {
 	background-color: $color-bk-body;
 	color: $color-text;
 	height: auto !important;
-	min-height: 100rem;
+	//min-height: 100rem;
 	line-height: $line-height-def;
 	overflow-y: scroll;
 
@@ -187,11 +187,12 @@ BODY {
 	margin-right: auto;
 	max-width: $m-max;
 	width: 100%;
-	min-height: 80rem;
+	//min-height: 80rem;
 
 	@include media-breakpoint-down(lg) {
 		padding-left: 15px;
 		padding-right: 15px;
+		min-height: auto;
 	}
 
 	&.wrap--twocolumn {

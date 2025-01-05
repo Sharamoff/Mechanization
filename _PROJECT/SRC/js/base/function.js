@@ -283,13 +283,27 @@ adjustGridMessages()
 $(window).on("resize", adjustGridMessages);
 
 
-$(document).on("click", ".block-messtopic", function () {
+let touchStartY = 0;
+
+$(document).on("touchstart", ".grid-messages__messtopic", function (e) {
+  touchStartY = e.originalEvent.touches[0].clientY;
+});
+
+$(document).on("click", ".block-messtopic", function (e) {
+  // Проверяем, было ли движение (прокрутка)
+  const touchEndY = e.originalEvent?.changedTouches?.[0]?.clientY || touchStartY;
+
+  if (Math.abs(touchEndY - touchStartY) > 10) {
+    return; // Прокрутка, не обрабатываем клик
+  }
+
   const grid = $(this).closest(".grid-messages__messtopic");
   const messages = $(".grid-messages");
 
   if ($(window).width() <= (992 - 17) && grid.hasClass("collapsed")) {
     grid.removeClass("collapsed");
     messages.addClass("opened");
+    grid.find(".block-messtopic").removeClass("active");
     grid.find(".block-messtopic").show();
     return;
   }
@@ -298,6 +312,7 @@ $(document).on("click", ".block-messtopic", function () {
   $(this).addClass("active");
 
   $(".block-messchat").css("display", "block");
+  $(".messchat__submenu").css("display", "block");
 
   const inputSection = $(".grid-messages__messinput");
   if ($(this).hasClass("sys")) {
