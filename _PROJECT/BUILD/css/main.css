@@ -212,12 +212,20 @@ BODY.body--with_top-adv .header-fix {
   margin-right: auto;
   max-width: 1434px;
   width: 100%;
+  min-height: calc(100dvh - 380px);
 }
 @media (max-width: 991.98px) {
   .wrap {
     padding-left: 15px;
     padding-right: 15px;
-    min-height: auto;
+    min-height: calc(100dvh - 430px);
+  }
+}
+@media (max-width: 767.98px) {
+  .wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: calc(100dvh - 450px);
   }
 }
 .wrap:first-child {
@@ -2748,6 +2756,48 @@ OL.ol--cont > li:before {
   margin-bottom: 3rem;
 }
 
+.flex-images {
+  overflow: hidden;
+}
+.flex-images:hover .item {
+  opacity: 0.5;
+}
+.flex-images .item {
+  float: left;
+  margin: 0.1rem;
+  box-sizing: content-box;
+  overflow: hidden;
+  position: relative;
+  border: solid 1px transparent;
+  transition: all 0.3s ease-in-out;
+}
+.flex-images .item:hover {
+  border-color: white;
+  opacity: 1;
+}
+.flex-images .item:hover img {
+  scale: 1.03;
+}
+.flex-images .item img {
+  display: block;
+  width: auto;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.flex-images .item .flex-num {
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
 .block-idx_typeeq a {
   display: flex;
   align-items: center;
@@ -5142,6 +5192,7 @@ OL.ol--cont > li:before {
   top: 0;
   margin-left: -3rem;
   margin-right: -3rem;
+  text-align: right;
 }
 @media (max-width: 991.98px) {
   .grid-messages__messchat .messchat__submenu {
@@ -5150,6 +5201,7 @@ OL.ol--cont > li:before {
   }
 }
 .grid-messages__messchat .messchat__submenu button {
+  display: block;
   border: none;
   border-radius: 3px;
   color: #444444;
@@ -5157,9 +5209,9 @@ OL.ol--cont > li:before {
   width: 3rem;
   height: 2.8rem;
   text-align: center;
-  line-height: 3rem;
+  line-height: 3.2rem;
+  padding: 0 !important;
   margin-left: auto;
-  float: right;
 }
 .grid-messages__messchat .messchat__submenu button:before {
   font: 1.7rem/1 "Font Awesome 5 Pro";

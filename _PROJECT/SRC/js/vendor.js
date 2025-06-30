@@ -11,3 +11,4 @@
 //= vendor/bootstrap-select.js
 //= vendor/defaults-ru_RU.js
 
+//= vendor/flex-images.min.js

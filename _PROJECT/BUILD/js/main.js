@@ -337,4 +337,9 @@ $(document).on("click", ".block-messtopic", function (e) {
 });
 
 
+
+// flex gallery
+$('.flex-images').flexImages({rowHeight: 400});
+
+
 });

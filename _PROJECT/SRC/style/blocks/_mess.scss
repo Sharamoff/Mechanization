@@ -83,6 +83,7 @@
     top: 0;
     margin-left: -3rem;
     margin-right: -3rem;
+    text-align: right;
 
     @include media-breakpoint-down(lg) {
       margin-left: -1rem;
@@ -90,6 +91,7 @@
     }
 
     button {
+      display: block;
       border: none;
       border-radius: 3px;
       color: $c-gray;
@@ -97,9 +99,9 @@
       width: 3rem;
       height: 2.8rem;
       text-align: center;
-      line-height: 3rem;
+      line-height: 3.2rem;
+      padding: 0 !important;
       margin-left: auto;
-      float: right;
 
       &:before {
         font: 1.7rem/1 $fontawesome;
