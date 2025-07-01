@@ -1,0 +1,28 @@
+ul.block-taglist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0 0 2rem 0;
+
+  > li {
+    list-style: none;
+    white-space: nowrap;
+
+    a {
+      text-decoration: none;
+      padding: 0.8rem 1rem;
+      background: $c-gray-lighter;
+      border-radius: $border-radius;
+      line-height: $line-height-min;
+      color: $c-black;
+
+      &:hover {
+        background: #cccccc;
+      }
+    }
+
+  }
+
+}

@@ -1,13 +1,7 @@
 footer {
-  margin-top: 6rem;
   background: $c-black url("../img/bk-hf.gif") left top repeat-x;
   padding: 3rem 0;
   color: #999999;
-
-  @include media-breakpoint-down(md) {
-    margin-top: 3rem;
-  }
-
 
   a {
     color: $c-white;
@@ -102,3 +96,114 @@ footer {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+
+
+
+.fm_subscribe {
+  margin-top: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: $c-gray-lighter;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .wrap-subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 2rem;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $m-max;
+    width: 100%;
+
+    @include media-breakpoint-down(lg) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+  }
+
+  .subscribe__hdr {
+    font-family: $font-family-narrow;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+
+    @include media-breakpoint-down(lg) {
+      font-size: $font-size-basemax;
+    }
+
+    i {
+      margin-right: 1rem;
+      color: $c-white;
+    }
+
+  }
+
+  .form-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+
+    .form-control {
+      min-width: 26rem;
+    }
+
+    .b-tool {
+      min-width: auto;
+      margin: 0;
+    }
+
+  }
+
+  .form-check {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: auto 3rem;
+    padding: 0;
+
+    @include media-breakpoint-down(sm) {
+      margin: 0;
+    }
+
+    input[type='checkbox'] {
+      position: relative;
+      width: 1.5rem !important;
+      height: 1.5rem !important;
+      top: -0.2rem;
+    }
+
+    label {
+      font-size: $font-size-basemin;
+      color: $c-gray;
+      line-height: 1 !important;
+    }
+
+    &:hover {
+
+      label {
+        color: $c-black;
+      }
+
+    }
+
+    .form-check-input {
+      margin-top: 0;
+      margin-left: -1.3em;
+    }
+
+  }
+
+}
+

@@ -786,15 +786,9 @@ header {
 }
 
 footer {
-  margin-top: 6rem;
   background: black url("../img/bk-hf.gif") left top repeat-x;
   padding: 3rem 0;
   color: #999999;
-}
-@media (max-width: 767.98px) {
-  footer {
-    margin-top: 3rem;
-  }
 }
 footer a {
   color: white;
@@ -879,6 +873,98 @@ footer a:hover {
   margin-bottom: 1.5rem;
 }
 
+.fm_subscribe {
+  margin-top: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: #dddddd;
+}
+@media (max-width: 767.98px) {
+  .fm_subscribe {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+.fm_subscribe .wrap-subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem 2rem;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1434px;
+  width: 100%;
+}
+@media (max-width: 991.98px) {
+  .fm_subscribe .wrap-subscribe {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.fm_subscribe .subscribe__hdr {
+  font-family: "PT Sans Narrow", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+@media (max-width: 991.98px) {
+  .fm_subscribe .subscribe__hdr {
+    font-size: 1.7rem;
+  }
+}
+.fm_subscribe .subscribe__hdr i {
+  margin-right: 1rem;
+  color: white;
+}
+.fm_subscribe .form-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+}
+.fm_subscribe .form-group .form-control {
+  min-width: 26rem;
+}
+.fm_subscribe .form-group .b-tool {
+  min-width: auto;
+  margin: 0;
+}
+.fm_subscribe .form-check {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: auto 3rem;
+  padding: 0;
+}
+@media (max-width: 575.98px) {
+  .fm_subscribe .form-check {
+    margin: 0;
+  }
+}
+.fm_subscribe .form-check input[type=checkbox] {
+  position: relative;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  top: -0.2rem;
+}
+.fm_subscribe .form-check label {
+  font-size: 1.3rem;
+  color: #444444;
+  line-height: 1 !important;
+}
+.fm_subscribe .form-check:hover label {
+  color: black;
+}
+.fm_subscribe .form-check .form-check-input {
+  margin-top: 0;
+  margin-left: -1.3em;
+}
+
 .modal.show {
   padding-right: 17px;
   padding-left: 17px;
@@ -951,6 +1037,32 @@ footer a:hover {
   right: 1.5rem;
   color: white;
   font-size: 2.5rem;
+}
+
+#id_wnd-cookie {
+  position: fixed;
+  z-index: 9999;
+  bottom: 5dvh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35rem;
+  padding: 3rem;
+  background-color: #222222;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  border: solid 1px #444444;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75);
+}
+#id_wnd-cookie a {
+  color: #dddddd;
+}
+#id_wnd-cookie a:hover {
+  color: white;
+}
+#id_wnd-cookie button {
+  width: 100%;
+  margin: 2rem auto 0 auto;
 }
 
 .breadcrumb {
@@ -1083,6 +1195,31 @@ a:hover .bl {
   margin-top: 0.3rem;
   margin-bottom: 0.3rem;
   color: black;
+}
+
+.img-fullsize {
+  width: 100%;
+  height: auto;
+  margin-bottom: 4rem;
+  position: relative;
+  border: solid1 px #dddddd;
+}
+.img-fullsize img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.img-fullsize__title {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  padding: 0.3rem 0.6rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font: 12px "PT Sans", Arial, Helvetica, sans-serif;
+  line-height: 1.1;
 }
 
 .card {
@@ -1506,6 +1643,11 @@ h3 {
   margin-top: -0.53rem;
   margin-bottom: 1.7rem;
   white-space: nowrap;
+}
+@media (max-width: 767.98px) {
+  .hdr-link {
+    font-size: 1.5rem;
+  }
 }
 .hdr-link i {
   padding: 0.7rem;
@@ -5421,4 +5563,28 @@ OL.ol--cont > li:before {
 }
 .block-messchat .viewed {
   color: #ff7000;
+}
+
+ul.block-taglist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+ul.block-taglist > li {
+  list-style: none;
+  white-space: nowrap;
+}
+ul.block-taglist > li a {
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  background: #dddddd;
+  border-radius: 5px;
+  line-height: 1.1;
+  color: black;
+}
+ul.block-taglist > li a:hover {
+  background: #cccccc;
 }
